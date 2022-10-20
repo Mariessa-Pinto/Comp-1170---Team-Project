@@ -1,0 +1,26 @@
+body , html {
+    height: 100%;
+    margin: 0px;
+    background-color: #C1DEC2;
+}
+
+.mNav{
+    height: 100px;
+}
+
+.section1{
+    background-color: #7E917F;
+    height: 831px;
+}
+
+.section2{
+    background-color: #C1DEC2;
+    height: 2750px;
+}
+
+.mFooter{
+    background-color: #3C453C;
+    height: 369px;
+    display: flex;
+    flex-direction: row;
+}
