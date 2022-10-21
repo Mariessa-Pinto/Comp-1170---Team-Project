@@ -5,6 +5,10 @@ body , html {
     background-color: #C1DEC2;
 }
 
+a{
+    text-decoration: none;
+}
+
 .mNav{
     height: 100px;
 }
@@ -22,6 +26,11 @@ body , html {
 .mFooter{
     background-color: #3C453C;
     height: 369px;
+    display: flex;
+    flex-direction: row;
+}
+
+.mfooter2{
     display: flex;
     flex-direction: row;
 }
