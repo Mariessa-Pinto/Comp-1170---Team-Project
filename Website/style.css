@@ -3,6 +3,11 @@ body , html {
     height: 100%;
     margin: 0px;
     background-color: #C1DEC2;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+h3{
+    font-size: 38px;
 }
 
 a{
@@ -23,17 +28,62 @@ a{
     height: 2750px;
 }
 
+
+
+
+/*Footer*/
 .mFooter{
     background-color: #3C453C;
     height: 369px;
     display: flex;
     flex-direction: row;
+    justify-content: space-around;
 }
 
-.mfooter2{
+.mFooter1{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.FooterListItem{
+    font-size: 18px;
+}
+
+.FooterSectionTitle{
+    font-size: 24pt;
+    padding-bottom: 5px;
+    font-weight: 600;
+}
+
+.mFooter1Header {
+    margin: 0;
+    padding-bottom: 10px;
+}
+
+.mFooter1Description {
+    margin: 0;
+    font-size: 18px;
+}
+
+.mFooter2{
     display: flex;
     flex-direction: row;
+    align-items: center;
+    gap: 80px;
 }
+
+.mFooter2List {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+/*END FOOTER*/
+
+
 
 /*Landing Page*/ 
 
