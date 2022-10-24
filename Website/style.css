@@ -6,17 +6,61 @@ body , html {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
-h3{
-    font-size: 38px;
-}
-
 a{
     text-decoration: none;
 }
 
+
+/*Nav Bar*/
 .mNav{
     height: 100px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
 }
+
+.profilePic{
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    border-radius: 60px;
+}
+
+.mNavBrand{
+    font-size: 28px;
+    color: #000000;
+    font-weight: 700;
+}
+
+.mNavSleep{
+    font-size: 21px;
+    color: #000000;
+}
+
+.mNavMood{
+    font-size: 21px;
+    color: #000000;
+}
+
+.mNavMeditation{
+    font-size: 21px;
+    font-weight: 700;
+    text-decoration: underline;
+    color: #000000;
+}
+
+.mNavResource{
+    font-size: 21px;
+    color: #000000;
+}
+
+.searchIcon{
+    width: 60px;
+    height: 60px;
+    object-fit: cover;
+}
+/*Nav Bar End*/
 
 .section1{
     background-color: #7E917F;
@@ -28,6 +72,9 @@ a{
     height: 2750px;
 }
 
+.section1Header{
+    margin: 0;
+}
 
 
 
@@ -46,24 +93,28 @@ a{
     justify-content: center;
 }
 
-.FooterListItem{
+.mFooterListItem{
     font-size: 18px;
+    color: #F9F4F2;
 }
 
-.FooterSectionTitle{
+.mFooterSectionTitle{
     font-size: 24pt;
     padding-bottom: 5px;
     font-weight: 600;
+    color: #F9F4F2;
 }
 
 .mFooter1Header {
     margin: 0;
     padding-bottom: 10px;
+    color: #F9F4F2;
 }
 
 .mFooter1Description {
     margin: 0;
     font-size: 18px;
+    color: #F9F4F2;
 }
 
 .mFooter2{
@@ -80,6 +131,7 @@ a{
     display: flex;
     flex-direction: column;
     gap: 10px;
+    color: #F9F4F2;
 }
 /*END FOOTER*/
 
