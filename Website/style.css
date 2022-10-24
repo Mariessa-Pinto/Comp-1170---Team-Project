@@ -62,19 +62,45 @@ a{
 }
 /*Nav Bar End*/
 
+
 .section1{
     background-color: #7E917F;
     height: 831px;
 }
+
+.section1Header{
+    margin: 0;
+    font-size: 24px;
+    color: #000000;
+}
+
+.section1Slogan{
+    font-size: 70px;
+    color: #000000;
+}
+
+.section1In{
+    font-size: 34px;
+    color: #000000;
+}
+
+.section1Out{
+    font-size: 34px;
+    color: #000000;
+}
+
+.section1Breath{
+    font-size: 34px;
+    color: #F9F4F2;
+}
+
 
 .section2{
     background-color: #C1DEC2;
     height: 2750px;
 }
 
-.section1Header{
-    margin: 0;
-}
+
 
 
 
@@ -109,6 +135,7 @@ a{
     margin: 0;
     padding-bottom: 10px;
     color: #F9F4F2;
+    font-size: 38px;
 }
 
 .mFooter1Description {
