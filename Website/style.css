@@ -6,10 +6,6 @@ body , html {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
-h3{
-    font-size: 38px;
-}
-
 a{
     text-decoration: none;
 }
@@ -20,13 +16,50 @@ a{
     height: 100px;
     display: flex;
     flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
 }
 
 .profilePic{
     width: 80px;
     height: 80px;
+    object-fit: cover;
+    border-radius: 60px;
 }
 
+.mNavBrand{
+    font-size: 28px;
+    color: #000000;
+    font-weight: 700;
+}
+
+.mNavSleep{
+    font-size: 21px;
+    color: #000000;
+}
+
+.mNavMood{
+    font-size: 21px;
+    color: #000000;
+}
+
+.mNavMeditation{
+    font-size: 21px;
+    font-weight: 700;
+    text-decoration: underline;
+    color: #000000;
+}
+
+.mNavResource{
+    font-size: 21px;
+    color: #000000;
+}
+
+.searchIcon{
+    width: 60px;
+    height: 60px;
+    object-fit: cover;
+}
 /*Nav Bar End*/
 
 .section1{
@@ -39,6 +72,9 @@ a{
     height: 2750px;
 }
 
+.section1Header{
+    margin: 0;
+}
 
 
 
