@@ -1,28 +1,205 @@
+/*Meditation Page*/
 body , html {
     height: 100%;
     margin: 0px;
-    background-color: #C0D6DF;
+    background-color: #C1DEC2;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
+a{
+    text-decoration: none;
+}
+
+
+/*Nav Bar*/
 .mNav{
     height: 100px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
 }
 
-.section1{
+.profilePic{
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    border-radius: 60px;
+}
+
+.mNavBrand{
+    font-size: 28px;
+    color: #000000;
+    font-weight: 700;
+}
+
+.mNavSleep{
+    font-size: 21px;
+    color: #000000;
+}
+
+.mNavMood{
+    font-size: 21px;
+    color: #000000;
+}
+
+.mNavMeditation{
+    font-size: 21px;
+    font-weight: 700;
+    text-decoration: underline;
+    color: #000000;
+}
+
+.mNavResource{
+    font-size: 21px;
+    color: #000000;
+}
+
+.searchIcon{
+    width: 60px;
+    height: 60px;
+    object-fit: cover;
+}
+/*Nav Bar End*/
+
+
+.mSection1{
     background-color: #7E917F;
     height: 831px;
 }
 
-.section2{
+.mSection1Header{
+    margin: 0;
+    font-size: 24px;
+    color: #000000;
+}
+
+.mSection1Slogan{
+    font-size: 70px;
+    color: #000000;
+}
+
+.mSection1In{
+    font-size: 34px;
+    color: #000000;
+}
+
+.mSection1Out{
+    font-size: 34px;
+    color: #000000;
+}
+
+.mSection1Breath{
+    font-size: 34px;
+    color: #F9F4F2;
+}
+
+.mSection2{
     background-color: #C1DEC2;
     height: 2750px;
 }
 
+.mBreathInOut{
+    display: flex;
+    flex-direction: row;
+    gap: 500px;
+}
+
+.mSloganWIcon{
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+}
+
+.mSection1Bottom{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.mSection1Top{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding-left: 100px;
+    padding-top: 100px;
+}
+
+.mAnimatedCircle{
+    height: 300px;
+    width: 300px;
+}
+
+/*Footer*/
 .mFooter{
     background-color: #3C453C;
     height: 369px;
     display: flex;
     flex-direction: row;
+}
+
+.mFooter1{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.mFooterListItem{
+    font-size: 18px;
+    color: #F9F4F2;
+}
+
+.mFooterSectionTitle{
+    font-size: 24pt;
+    padding-bottom: 5px;
+    font-weight: 600;
+    color: #F9F4F2;
+}
+
+.mFooter1Header {
+    margin: 0;
+    padding-bottom: 10px;
+    color: #F9F4F2;
+    font-size: 38px;
+}
+
+.mFooter1Description {
+    margin: 0;
+    font-size: 18px;
+    color: #F9F4F2;
+}
+
+.mFooter2{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 80px;
+}
+
+.mFooter2List {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    color: #F9F4F2;
+}
+/*END FOOTER*/
+
+
+
+/*Landing Page*/ 
+
+/*Resource Page*/
+
+/*Sleep Page*/
+
+.sleepBody, sleepHTML{
+    background-color: #C0D6DF;
+    height: 100%;
+    margin: 0px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 .sleepNav{
@@ -35,7 +212,7 @@ body , html {
     align-items: center;
 }
 
-a {
+.a{
     text-decoration:none;
     color:#000000;
 }
@@ -140,4 +317,158 @@ a {
 
 .sleepRecents {
     font-weight:lighter;
+    justify-content: space-around;
+}
+
+
+/*Mood Page*/
+
+    /* >BUTTON DOESN'T WORK. WHEN ADD BACKGROUND COLOR, DISABLES BUTTON?*/
+    /*NEED TO FIX THE TIMING. ANIMATION TIMINGS NOT SYNCED?*/
+    /*Add working nav links to header, and bold underline to mood button.
+    /*Next major components to work on: Goal setting and Gratefulness journal*/
+.moodBody , .moodHTML {
+    height: 100%;
+    margin: 0px;
+    background-color: #c1c7de;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+}
+.moodNav{
+    height: 100px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    text-decoration: none;
+}
+
+.moodSection1{
+    text-indent: 19%;
+    height: 50%; 
+    background-color: #7E8391;
+    color: #F9F4F2;
+
+}
+
+.moodSpeakerImg{
+    height: 25px;
+    padding-left: 10px;
+}
+
+.moodAnimation{
+    height: 50%;
+    width: 100%;
+    background-color: #7E8391;
+}
+
+.moodAnimationSlogan::before{
+    position: absolute;
+    width: 70%;
+    left: 15%;
+    top: 38%;
+    content: '';
+    animation: animate infinite 40s;
+    font-size: 45px;
+    font-weight: 800;
+    text-align: center;
+
+}
+
+@keyframes animate{
+    0%{
+        content:'I am Enough.';
+    }
+    25%{
+        content:'I can be kind to myself.';
+    }
+    50%{
+        content:'I am not alone.';
+    }
+    75%{
+        content:'I am capable.';
+    }
+    100%{
+        content:'I can face my challenges. ';
+    }
+}
+
+.timerBar{
+    position: relative;
+    width: 50%;
+    height: 2%;
+    top: 80%;
+    left: 25%;
+    background: #F9F4F2;
+    border-radius: 5px;
+    animation: countDown infinite 8s;
+}
+
+@keyframes countDown{
+    100%{
+        width: 0%;
+    }
+}
+
+.moodQuestionImg{
+    height: 20px;
+    padding-left: 5px;
+}
+
+.moodExercises h3, .moodExercises p{
+    position: relative;
+    left: 19%;
+}
+
+.moodQicon{
+    height: 25px;
+}
+
+a span {
+    position: absolute;
+    display: none; 
+    width: auto;
+    left: 15%; 
+    color: #F9F4F2; 
+    background: #3D3F46; 
+    padding: 5px;
+    border-radius: 10px;
+}
+
+a:hover .questionInfo {
+    display: block; 
+    text-align: center;}
+
+
+
+.activityText{
+    display: flex;
+    justify-content: center;
+}
+
+.activityTextCol1, .activityTextCol2{
+    width: 33%;
+    height: 15%;
+}
+
+.activityText input, .moodSaveAct{
+    width: 90%;
+    border-radius: 20px;
+    border: 1px solid #444444;
+    font-size: 20px;
+    margin: 3% 0 3% 5%;
+    padding: 1% 2%;
+}
+
+button.moodSaveAct{
+        background: #42113C;
+        color: #F9F4F2;
+}
+
+.moodFooter{
+    background-color: #3D3F46;
+    height: 369px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
 }
