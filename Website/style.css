@@ -136,7 +136,6 @@ a{
     height: 369px;
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
 }
 
 .mFooter1{
@@ -195,6 +194,132 @@ a{
 /*Resource Page*/
 
 /*Sleep Page*/
+
+.sleepBody, sleepHTML{
+    background-color: #C0D6DF;
+    height: 100%;
+    margin: 0px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.sleepNav{
+    height:100px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    background-color:#C0D6DF;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.a{
+    text-decoration:none;
+    color:#000000;
+}
+
+.sleepNav a:hover {
+    border-bottom: 2px solid #000000;
+    font-weight:bold;
+}
+
+.sleepNav a.active {
+    border-bottom: 2px solid #000000;
+  }
+
+.sleepTopColumn {
+    background-color: #28444D;
+    height: 831px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    color:#ffffff;
+}
+
+.sleepBottomColumn {
+    background-color: #04313E;
+    height: 2750px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    color:#ffffff;
+    font-size:small;
+}
+
+.sleepFooter {
+    background-color: #C0D6DF;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    height: 369px;
+    display: flex;
+    flex-direction: row;
+}
+
+.sleepHeaderText {
+    margin:0;
+    padding-left:15%;
+    font-weight:lighter;
+}
+
+.sleepHeaderTitle {
+    padding-left:15%;
+    font-weight:lighter;
+}
+
+.sleepHeaderPic{
+    width:500px;
+    height:500px;
+    object-fit:cover;
+}
+
+.sleepPicks{
+    padding-top:70px;
+    padding-left:10px;
+}
+
+.sleepPicksHeader {
+    color:#ffffff;
+    font-weight:lighter;
+    width:2800px;
+}
+
+.sleepImagesAll {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    object-fit:cover;
+}
+
+.sleepPicksImage1{
+    object-fit:cover;
+    width:300px;
+    height:200px;
+    border-radius:15px;
+}
+
+.sleepPicksImage2 {
+    object-fit:cover;
+    width:300px;
+    height:200px;
+    border-radius:15px;
+    margin-left:40px;
+    margin-right:40px;
+}
+
+.sleepPicksImage3 {
+    object-fit:cover;
+    width:300px;
+    height:200px;
+    border-radius:15px;
+}
+
+.sleepPopular {
+    font-weight:lighter;
+
+}
+.sleepNew {
+    font-weight:lighter;
+}
+
+.sleepRecents {
+    font-weight:lighter;
+    justify-content: space-around;
+}
+
 
 /*Mood Page*/
 
