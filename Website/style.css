@@ -170,4 +170,154 @@ a{
 
 /*Sleep Page*/
 
-/*Stress Page*/
+/*Mood Page*/
+
+    /* >BUTTON DOESN'T WORK. WHEN ADD BACKGROUND COLOR, DISABLES BUTTON?*/
+    /*NEED TO FIX THE TIMING. ANIMATION TIMINGS NOT SYNCED?*/
+    /*Add working nav links to header, and bold underline to mood button.
+    /*Next major components to work on: Goal setting and Gratefulness journal*/
+.moodBody , .moodHTML {
+    height: 100%;
+    margin: 0px;
+    background-color: #c1c7de;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+}
+.moodNav{
+    height: 100px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    text-decoration: none;
+}
+
+.moodSection1{
+    text-indent: 19%;
+    height: 50%; 
+    background-color: #7E8391;
+    color: #F9F4F2;
+
+}
+
+.moodSpeakerImg{
+    height: 25px;
+    padding-left: 10px;
+}
+
+.moodAnimation{
+    height: 50%;
+    width: 100%;
+    background-color: #7E8391;
+}
+
+h1::before{
+    position: absolute;
+    width: 70%;
+    left: 15%;
+    top: 38%;
+    content: '';
+    animation: animate infinite 40s;
+    font-size: 45px;
+    font-weight: 800;
+    text-align: center;
+
+}
+
+@keyframes animate{
+    0%{
+        content:'I am Enough.';
+    }
+    25%{
+        content:'I can be kind to myself.';
+    }
+    50%{
+        content:'I am not alone.';
+    }
+    75%{
+        content:'I am capable.';
+    }
+    100%{
+        content:'I can face my challenges. ';
+    }
+}
+
+.timerBar{
+    position: relative;
+    width: 50%;
+    height: 2%;
+    top: 80%;
+    left: 25%;
+    background: #F9F4F2;
+    border-radius: 5px;
+    animation: countDown infinite 8s;
+}
+
+@keyframes countDown{
+    100%{
+        width: 0%;
+    }
+}
+
+.moodQuestionImg{
+    height: 20px;
+    padding-left: 5px;
+}
+
+.moodExercises h3, .moodExercises p{
+    position: relative;
+    left: 19%;
+}
+
+.moodQicon{
+    height: 25px;
+}
+
+a span {
+    position: absolute;
+    display: none; 
+    width: auto;
+    left: 15%; 
+    color: #F9F4F2; 
+    background: #3D3F46; 
+    padding: 5px;
+    border-radius: 10px;
+}
+
+a:hover .questionInfo {
+    display: block; 
+    text-align: center;}
+
+
+
+.activityText{
+    display: flex;
+    justify-content: center;
+}
+
+.activityTextCol1, .activityTextCol2{
+    width: 33%;
+    height: 15%;
+}
+
+.activityText input, .moodSaveAct{
+    width: 90%;
+    border-radius: 20px;
+    border: 1px solid #444444;
+    font-size: 20px;
+    margin: 3% 0 3% 5%;
+    padding: 1% 2%;
+}
+
+button.moodSaveAct{
+        background: #42113C;
+        color: #F9F4F2;
+}
+
+.moodFooter{
+    background-color: #3D3F46;
+    height: 369px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
