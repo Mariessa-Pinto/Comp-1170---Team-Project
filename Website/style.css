@@ -63,46 +63,72 @@ a{
 /*Nav Bar End*/
 
 
-.section1{
+.mSection1{
     background-color: #7E917F;
     height: 831px;
 }
 
-.section1Header{
+.mSection1Header{
     margin: 0;
     font-size: 24px;
     color: #000000;
 }
 
-.section1Slogan{
+.mSection1Slogan{
     font-size: 70px;
     color: #000000;
 }
 
-.section1In{
+.mSection1In{
     font-size: 34px;
     color: #000000;
 }
 
-.section1Out{
+.mSection1Out{
     font-size: 34px;
     color: #000000;
 }
 
-.section1Breath{
+.mSection1Breath{
     font-size: 34px;
     color: #F9F4F2;
 }
 
-
-.section2{
+.mSection2{
     background-color: #C1DEC2;
     height: 2750px;
 }
 
+.mBreathInOut{
+    display: flex;
+    flex-direction: row;
+    gap: 500px;
+}
 
+.mSloganWIcon{
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+}
 
+.mSection1Bottom{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 
+.mSection1Top{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding-left: 100px;
+    padding-top: 100px;
+}
+
+.mAnimatedCircle{
+    height: 300px;
+    width: 300px;
+}
 
 /*Footer*/
 .mFooter{
@@ -211,7 +237,7 @@ a{
     background-color: #7E8391;
 }
 
-h1::before{
+.moodAnimationSlogan::before{
     position: absolute;
     width: 70%;
     left: 15%;
