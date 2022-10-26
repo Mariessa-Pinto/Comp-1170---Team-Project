@@ -734,7 +734,7 @@ a{
     flex-direction: row;
     align-items: flex-start;
     gap: 60px;
-    padding-left: 22%;
+    justify-content: center;
     padding-top: 20px;
 }
 .rounded{
@@ -794,8 +794,9 @@ a{
 .ResSection2{
     background-color: #D6EDFF;
     height: 2750px;
-    padding-left: 15%;
+    justify-content: center;
 }
+
 .row-one{
     display: flex;
     flex-direction: row;
@@ -803,6 +804,7 @@ a{
     gap: 13px;
     cursor: pointer;
     object-fit: cover;
+    justify-content: center;
 }
 .row-two{
     display: flex;
@@ -812,11 +814,11 @@ a{
     padding-top: 8px;
     cursor: pointer;
     object-fit: cover;
+    justify-content: center;
 }
 .ResSection2Part2{
     display: flex;
-    flex-direction: row;
-    align-items: flex-start;
+   justify-content: center;
     gap: 5px;
 }
 .ResBox1{  
@@ -826,6 +828,9 @@ a{
     padding-top: 70px;
     padding-bottom: 60px;
     gap: 50px;
+    justify-content: center;
+    flex-direction: row;
+    align-items: flex-start;
 }
 
 .ResRightBox{
@@ -834,7 +839,8 @@ a{
     background-color: #F9F4F2;
     width: 344px;
     border-radius: 40px;
-    height: 400px;
+    height: 470px;
+
 }
 .ResBox2{
     display: flex;
@@ -842,7 +848,7 @@ a{
     background-color: #F9F4F2;
     width: 344px;
     border-radius: 40px;
-    height: 400px;
+    height: 470px;
 }
 .ResBox3{
     display: flex;
@@ -850,7 +856,7 @@ a{
     background-color: #F9F4F2;
     width: 344px;
     border-radius: 40px;
-    height: 400px;
+    height: 470px;
 }
 
 
@@ -889,6 +895,7 @@ select{
     border: solid 2px black;
     font-size: 18px;
     background-color: #F9F4F2;
+    justify-content: center;
 }
 
 
@@ -900,6 +907,7 @@ select{
     width: 1100px;
     border-radius: 40px;
     height: 280px;
+    justify-content: center;
 }
 
 
@@ -955,6 +963,7 @@ select{
 
 .ResourcesProBottom{
     padding-top: 10px;
+    justify-content: center;
 }
 
 .Resources2BoxImage{
@@ -973,6 +982,9 @@ select{
     display: flex;
     flex-direction: column;
 }
+.helpbuttons{
+    justify-content: center;
+}
 .btn-help{
     background-color: #28444D; 
     border: none; 
@@ -986,6 +998,7 @@ select{
     font-size: 20px;
     text-align: center;
     cursor: pointer;
+    color: white;
 }
 
 
