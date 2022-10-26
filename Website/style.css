@@ -372,7 +372,7 @@ a{
 
 /*Landing Page*/ 
 
-/*Resource Page*/
+
 
 /*Sleep Page*/
 
@@ -653,3 +653,301 @@ button.moodSaveAct{
     flex-direction: row;
     justify-content: space-around;
 }
+/*Resource Page*/
+
+/*Resources Nav Bar starts*/
+body , html {
+    height: 100%;
+    margin: 0px;
+    background-color: #D6EDFF;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+a{
+    text-decoration: none;
+}
+
+.resNav{
+    height: 100px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.profilePic{
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    border-radius: 60px;
+}
+
+.resNavBrand{
+    font-size: 28px;
+    color: #000000;
+    font-weight: 700;
+}
+
+.resNavSleep{
+    font-size: 21px;
+    color: #000000;
+}
+
+.resNavMood{
+    font-size: 21px;
+    color: #000000;
+}
+
+.resNavMeditation{
+    font-size: 21px;
+    color: #000000;
+}
+
+.resNavResource{
+    font-size: 21px;
+    font-weight: 700;
+    text-decoration: underline;
+    color: #000000;
+}
+
+.searchIcon{
+    width: 60px;
+    height: 60px;
+    object-fit: cover;
+}
+/*Resources Nav Bar ends*/
+
+.ResSection1{
+    background-color: #40798C;
+    height: 831px;
+}
+
+.ResSection1Header{
+    margin: 0;
+    font-size: 70px;
+    color: white;
+    text-align: center;
+    
+}
+.ResSection1Top{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 60px;
+    padding-left: 22%;
+    padding-top: 20px;
+}
+.rounded{
+    border-radius: 22px;
+}
+.MassageCol{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.btn-one{
+    background-color: #F9F4F2; 
+    border: none; 
+    color: black;
+    margin-top: 40px;
+    border-radius: 22px;
+    padding: 40px;
+    width: 55%;
+    margin-bottom: 15px;
+    font-size: 20px;
+    cursor: pointer;
+}
+.AcupunctureCol{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.btn-two{
+    background-color: #F9F4F2; 
+    border: none; 
+    color: black;
+    margin-top: 40px;
+    border-radius: 22px;
+    padding: 40px;
+    width: 55%;
+    margin-bottom: 15px;
+    font-size: 20px;
+    cursor: pointer;
+}
+.CounsellingCol{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.btn-three{
+    background-color: #F9F4F2; 
+    border: none; 
+    color: black;
+    margin-top: 40px;
+    border-radius: 22px;
+    padding: 40px;
+    width: 55%;
+    margin-bottom: 15px;
+    font-size: 20px;
+    cursor: pointer;
+}
+.ResSection2{
+    background-color: #D6EDFF;
+    height: 2750px;
+    padding-left: 15%;
+}
+.row-one{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 8px;
+    cursor: pointer;
+}
+.row-two{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 8px;
+    padding-top: 8px;
+    cursor: pointer;
+}
+.ResSection2Part2{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 5px;
+}
+.ResBox1{  
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding-top: 70px;
+    padding-bottom: 60px;
+    gap: 50px;
+}
+
+.ResRightBox{
+    display: flex;
+    flex-direction: column;
+    background-color: #F9F4F2;
+    width: 344px;
+    border-radius: 40px;
+    height: 400px;
+}
+.ResBox2{
+    display: flex;
+    flex-direction: column;
+    background-color: #F9F4F2;
+    width: 344px;
+    border-radius: 40px;
+    height: 400px;
+}
+.ResBox3{
+    display: flex;
+    flex-direction: column;
+    background-color: #F9F4F2;
+    width: 344px;
+    border-radius: 40px;
+    height: 400px;
+}
+.ResBox4{
+    display: flex;
+    flex-direction: row;
+    background-color: #F9F4F2;
+    width: 1100px;
+    border-radius: 40px;
+    height: 375px;
+}
+.rev1{
+    padding: 20%;
+}
+.Rev1Text{
+    font-size: 24px;
+    color: #444444;
+    margin: 0;
+}
+
+.ResBox1:hover{
+    cursor: pointer;
+}
+
+.ResS1HeaderText{
+    font-size: 24px;
+    color: #191919;
+    margin: 0;
+}
+
+.ResBoxTop{
+    padding-top: 15px;
+    padding-left: 35px;
+}
+
+.ResBoxBottom{
+    padding-top: 70px;
+}
+/*Footer*/
+.ResFooter{
+    background-color: #28444D;
+    height: 369px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.ResFooter1{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.ResFooterListItem{
+    font-size: 18px;
+    color: #F9F4F2;
+}
+
+.ResFooterSectionTitle{
+    font-size: 24pt;
+    padding-bottom: 5px;
+    font-weight: 600;
+    color: #F9F4F2;
+}
+
+.ResFooter1Header {
+    margin: 0;
+    padding-bottom: 10px;
+    color: #F9F4F2;
+    font-size: 38px;
+}
+
+.ResFooter1Header{
+    cursor: pointer;
+}
+
+.ResFooter1Description {
+    margin: 0;
+    font-size: 18px;
+    color: #F9F4F2;
+}
+
+.ResFooter2{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 80px;
+}
+
+.ResFooter2List {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    color: #F9F4F2;
+}
+
+.ResFooter2List:hover{
+    cursor: pointer;
+}
+
+/*END FOOTER*/
