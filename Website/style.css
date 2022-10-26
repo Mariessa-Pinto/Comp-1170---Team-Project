@@ -371,6 +371,473 @@ a{
 
 
 /*Landing Page*/ 
+body,
+html {
+    height: 100%;
+    margin: 0px;
+    background-color: #89BAD9;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+.mNav {
+    height: 100px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.profilePic2 {
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    border-radius: 60px;
+}
+
+.mNavBrand {
+    font-size: 28px;
+    color: #000000;
+    font-weight: 700;
+}
+
+.mNavSleep {
+    font-size: 21px;
+    color: #000000;
+}
+
+.mNavMood {
+    font-size: 21px;
+    color: #000000;
+}
+
+.mNavMeditation {
+    font-size: 21px;
+    color: #000000;
+}
+
+.mNavResource {
+    font-size: 21px;
+    color: #000000;
+}
+
+.searchIcon1 {
+    width: 60px;
+    height: 60px;
+    object-fit: cover;
+}
+
+/*Nav Bar End*/
+
+.wave {
+    height: 831px;
+    width: 100%;
+}
+
+.section1 {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+.section1Header {
+    position: absolute;
+    top: 400px;
+    left: 15%;
+    font-size: 24px;
+    color: #000000;
+}
+.arrow {
+    display: flex;
+}
+
+.join {
+    border-radius: 20px;
+    width: 110px;
+    height: 40px;
+    border-color: transparent;
+    background-color:#F9F4F2;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.morningRoutine {
+    color: rgba(0, 0, 0, 1);
+    text-align: center;
+    height: 350px;
+    font-size: 24px;
+}
+
+.morning {
+    height: 280px;
+    display: flex;
+    text-align: left;
+    justify-content: center;
+}
+
+.morningPic {
+    max-width: 514px;
+    max-height: 280px;
+    border-top-left-radius: 40px;
+    border-bottom-left-radius: 40px;
+}
+
+.morningBox {
+    width: 766px;
+    height: 280px;
+    background-color: #e0dbd9;
+    border-top-right-radius: 40px;
+    border-bottom-right-radius: 40px;
+}
+
+.p1 {
+    padding-left: 30px;
+}
+
+.afternoonRoutine {
+    color: rgba(0, 0, 0, 1);
+    text-align: center;
+    align-items: center;
+    height: 350px;
+    font-size: 24px;
+}
+
+.afternoon {
+    height: 280px;
+    display: flex;
+    text-align: left;
+    justify-content: center;
+
+
+}
+
+.afternoonPic {
+    max-width: 514px;
+    max-height: 280px;
+    border-top-left-radius: 40px;
+    border-bottom-left-radius: 40px;
+
+
+
+}
+
+.afternoonBox {
+
+    width: 766px;
+    height: 280px;
+    background-color: #e0dbd9;
+    border-top-right-radius: 40px;
+    border-bottom-right-radius: 40px;
+}
+
+.p2 {
+    padding-left: 30px;
+}
+
+
+.nightRoutine {
+    color: rgba(0, 0, 0, 1);
+    text-align: center;
+    align-items: center;
+    height: 350px;
+    font-size: 24px;
+}
+
+.night {
+    height: 280px;
+    display: flex;
+    text-align: left;
+    justify-content: center;
+
+
+}
+
+.nightPic {
+    max-width: 514px;
+    max-height: 280px;
+    border-top-left-radius: 40px;
+    border-bottom-left-radius: 40px;
+
+}
+
+.nightBox {
+    width: 766px;
+    height: 280px;
+    background-color: #e0dbd9;
+    border-top-right-radius: 40px;
+    border-bottom-right-radius: 40px;
+}
+
+.p3 {
+    padding-left: 30px;
+}
+
+
+
+.section3 {
+   align-items: center;
+   position:absolute;
+   height: 100%;
+   width: 100%;
+}
+
+
+
+.vid {
+  width: 800px;
+  height: 478px;
+  position: absolute;
+  left: 35%;
+  font-family: Verdana;
+  font-weight: Regular;
+  font-size: 34px;
+  opacity: 1;
+  text-align: center;
+    
+}
+
+
+
+
+.road{
+    width: 800px;
+    height: 478px;
+    position: absolute;
+    top: 5%;
+    opacity:0.4
+    
+   
+
+
+}
+.van{
+    width: 800px;
+    height: 478px;
+    position: absolute;
+    top: 5%;
+    left: 70%;
+    opacity:0.4
+    
+
+
+}
+.sun {
+    width: 800px;
+    height: 478px;
+    opacity: 1;
+    position: absolute;
+    top: 5%;
+    left: 35%;
+    overflow: hidden;
+}
+.play-button{
+    width: 100px;
+    height: 100px;
+    opacity: 1;
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    overflow: hidden;
+
+}
+.afterVid {
+     height: 33%;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+.name-text{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: x-large;
+    position: absolute;
+    top: 2700px;
+    left: 1100px;
+}
+
+
+.pictures{
+
+    display: flex;
+    height: 100%;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+
+.mountain{
+     width: 620px;
+    height: 446px;
+    position: absolute;
+    top: 2850px;
+    left: 550px;
+    overflow: hidden;
+    border-radius: 25px;
+   
+}
+.mountain:hover{
+    cursor: pointer;
+    box-shadow: 10px 10px 30px black;
+    transition: 300ms;
+}
+.hike{
+    width: 620px;
+    height: 446px;
+    position: absolute;
+    top: 2850px;
+    left: 1200px;
+    overflow: hidden;
+    border-radius: 25px;
+
+}
+.hike:hover{
+    cursor: pointer;
+    box-shadow: 10px 10px 30px black;
+    transition: 300ms;
+}
+.roadtrip{
+    width: 400px;
+    height: 238px;
+    position: absolute;
+    top: 3350px;
+    left: 1420px;
+    overflow: hidden;
+    border-radius: 25px;
+    
+}
+.roadtrip:hover{
+    cursor: pointer;
+    box-shadow: 10px 10px 30px black;
+    transition: 300ms;
+}
+.morning-breeze{
+    width: 400px;
+    height: 238px;
+    position: absolute;
+    top: 3350px;
+    left: 1000px;
+    overflow: hidden;
+    border-radius: 25px;
+
+}
+.morning-breeze:hover{
+    cursor: pointer;
+    box-shadow: 10px 10px 30px black;
+    transition: 300ms;
+}
+.field{
+    width: 400px;
+    height: 238px;
+    position: absolute;
+    top: 3350px;
+    left: 580px;
+    overflow: hidden;
+    border-radius: 25px;
+}
+.field:hover{
+    cursor: pointer;
+    box-shadow: 10px 10px 30px black;
+    transition: 300ms;
+}
+.firstline{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: white;
+    font-size:xx-large;
+    position: absolute;
+    top: 2875px;
+    left: 575px;
+}
+.secondline{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: white;
+    font-size:xx-large;
+    position: absolute;
+    top: 2875px;
+    left: 1600px;
+}
+.label{
+    position: absolute;
+    top: 3600px;
+    left: 580px;
+}
+.labeltwo{
+    position: absolute;
+    top: 3600px;
+    left: 1000px;
+}
+.labelthree{
+    position: absolute;
+    top: 3600px;
+    left: 1420px;
+}
+
+
+
+
+
+
+
+
+/*Footer*/
+.lFooter {
+    background-color: #032340;
+    height: 369px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.lFooter1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.lFooterListItem {
+    font-size: 18px;
+    color: #F9F4F2;
+}
+
+.lFooterSectionTitle {
+    font-size: 24pt;
+    padding-bottom: 5px;
+    font-weight: 600;
+    color: #F9F4F2;
+}
+
+.lFooter1Header {
+    margin: 0;
+    padding-bottom: 10px;
+    color: #F9F4F2;
+    font-size: 38px;
+}
+
+.lFooter1Description {
+    margin: 0;
+    font-size: 18px;
+    color: #F9F4F2;
+}
+
+.lFooter2 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 80px;
+}
+
+.lFooter2List {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    color: #F9F4F2;
+}
 
 /*Resource Page*/
 
