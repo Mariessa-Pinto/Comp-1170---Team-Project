@@ -62,7 +62,7 @@ a{
 }
 /*Nav Bar End*/
 
-
+/*Section 1*/
 .mSection1{
     background-color: #7E917F;
     height: 831px;
@@ -94,11 +94,6 @@ a{
     color: #F9F4F2;
 }
 
-.mSection2{
-    background-color: #C1DEC2;
-    height: 2750px;
-}
-
 .mBreathInOut{
     display: flex;
     flex-direction: row;
@@ -128,6 +123,182 @@ a{
 .mAnimatedCircle{
     height: 300px;
     width: 300px;
+    animation-name: breathCircle;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes breathCircle{
+    0%{
+        height: 200px;
+        width: 200px;
+    }
+    50%{
+        height: 300px;
+        width: 300px;
+    }
+    100%{
+        height: 200px;
+        width: 200px;
+    }
+}
+
+/*Section2*/
+
+.mSection2{
+    background-color: #C1DEC2;
+    height: 2750px;
+}
+
+.mBoxImage{
+    width: 510px;
+    height: 280px;
+    object-fit: cover;
+    border-top-left-radius: 40px;
+    border-bottom-left-radius: 40px;
+}
+
+.mBoxImage:hover{
+    cursor: pointer;
+}
+
+.mS1-1Header{
+    font-size: 34px;
+    color: #000000;
+    padding-left: 7%;
+    padding-bottom: 50px;
+    padding-top: 130px;
+}
+
+.mS1-1SubHeader{
+    font-size: 34px;
+    color: #000000;
+    padding-left: 9%;
+    padding-bottom: 30px;
+}
+
+.mS1IconS:hover{
+    cursor: pointer;
+}
+
+.mSection2-1Box{  
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding-bottom: 60px;
+}
+
+.mS1-1RightBox{
+    display: flex;
+    flex-direction: column;
+    background-color: #F9F4F2;
+    width: 760px;
+    border-top-right-radius: 40px;
+    border-bottom-right-radius: 40px;
+    height: 280px;
+}
+
+.mS1-1RightBox:hover{
+    cursor: pointer;
+}
+
+.mClockIcon{
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+}
+
+.mSpeakerIcon{
+    width: 60px;
+    height: 60px;
+    object-fit: cover;
+    padding-left: 15px;
+}
+
+.mS1IconWTextSpeaker{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 5px;
+    padding-left: 15px;
+}
+
+.mS1IconWTextClock{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding-left: 15px;
+}
+
+.mS1IconText{
+    font-size: 24px;
+    color: #444444;
+    margin: 0;
+}
+
+.mS1HeaderText{
+    font-size: 24px;
+    color: #191919;
+    margin: 0;
+}
+
+.mS1-1RightTop{
+    padding-top: 15px;
+    padding-left: 35px;
+}
+
+.mS1-1RightBottom{
+    padding-top: 70px;
+}
+
+.m2BoxImage{
+    width: 400px;
+    height: 238px;
+    object-fit: cover;
+    border-radius: 15px;
+    transition: 300ms;
+}
+
+.m2BoxImage:hover{
+    box-shadow: 10px 10px 30px black;
+    transition: 300ms;
+}
+
+.mS2TopRow{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.mS2BottomRow{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.mS2Box{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding-bottom: 30px;
+}
+
+.mS2-2TopText{
+    font-size: 24px;
+    color: #191919;
+}
+
+.mS2-2BottomText{
+    font-size: 24px;
+    color: #444444;
+}
+
+.S2-2Header{
+    font-size: 34px;
+    color: #000000;
+    padding-left: 7%;
+    padding-bottom: 30px;
+    padding-top: 40px;
 }
 
 /*Footer*/
@@ -136,6 +307,7 @@ a{
     height: 369px;
     display: flex;
     flex-direction: row;
+    justify-content: space-around;
 }
 
 .mFooter1{
@@ -163,6 +335,10 @@ a{
     font-size: 38px;
 }
 
+.mFooter1Header{
+    cursor: pointer;
+}
+
 .mFooter1Description {
     margin: 0;
     font-size: 18px;
@@ -185,6 +361,11 @@ a{
     gap: 10px;
     color: #F9F4F2;
 }
+
+.mFooter2List:hover{
+    cursor: pointer;
+}
+
 /*END FOOTER*/
 
 
