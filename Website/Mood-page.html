@@ -11,20 +11,25 @@
 
 <body class="moodBody">
     <div class="moodNav">
-        <img src="" alt="">
-        <a href="">Sleep</a>
-        <a href="">Meditation</a>
-        <a href="">Mood</a>
-        <a href="">Resource/Info</a>
-        <img src="" alt="">
-        <img src="" alt="">
+        <a class="mNavBrand" href="">ZEN</a>
+        <a class="mNavSleep" href="">Sleep</a>
+        <a class="moodNavMeditation" href="">Meditation</a>
+        <a class="moodNavMood"href="">Mood</a>
+        <a class="mNavResource" href="">Resource/Info</a>
+            <a><img class="searchIcon" src="Search icon.svg" alt="">
+                <span class="searchField">
+                    <input type="text" id="searchBar" placeholder="E.g., &quot;Sleep help&quot;">
+                </span>
+            </a>
+
+        <img class="profilePic" src="profilePic.jpg" alt="">
     </div>
 
     <div class="moodSection1">
         <h3>Your Personalized Mood Assistance</h3>
         <h1 class="moodAnimationSlogan" >Repeat After Me. <img src="Speaker Icon.svg" alt="speakerIcon" class="moodSpeakerImg"></h1>
         <div class="moodAnimation">
-            <h1></h1>
+            <h1 class="moodAnimationSlogan"></h1>
             <div class="timerBar">
             </div>
         </div>
@@ -42,7 +47,7 @@
                 <div class="activityTextCol2">
                     <input type="text" id="activity4" placeholder="Activity #4">
                     <input type="text" id="activity5" placeholder="Activity #5">
-                    <button type="submit" class="moodSaveAct">Save my activities</button>
+                    <button type="submit" class="moodButtons moodSaveExc">Save my activities</button>
                 </div>
             </div>
 
@@ -58,40 +63,51 @@
                 <div class="activityTextCol2">
                     <input type="text" id="moodSmell" placeholder="Things I can smell...">
                     <input type="text" id="moodTaste" placeholder="Things I can taste...">
-                    <button type="submit" class="moodSaveAct">Save to my Journal</button>
+                    <button type="submit" class="moodButtons moodSaveExc">Save to my Journal</button>
                 </div>
             </div>
 
             <h3>Goal Setting</h3>
-            <p>List some activities you enjoy.<a><img src="Question Icon.svg" alt="questionIcon" class="moodQicon"><span class="questionInfo">If you're feeling down, come back to this list 
-                to remind you of some fun things to do!</span></a></p>
+            <p>Select some goals or choose your own.<a><img src="Question Icon.svg" alt="questionIcon" class="moodQicon">
+                <span class="questionInfo">Whether small or big, pick something that you can manage today.</span></a></p>
             <div class="activityText">    
                 <div class="activityTextCol1">
-                    <input type="text" id="activity1" placeholder="Activity #1">
-                    <input type="text" id="activity2" placeholder="Activity #2">
-                    <input type="text" id="activity3" placeholder="Activity #3">
+                    <label class="moodGoals">Make the bed <img src="MoodGoalBed.jpg" class="goalImgs moodImgBed" alt="bedPic">
+                        <input type="checkbox" id="goal1Bed">
+                        <span class="checkbubble"></span>
+                    </label>
+                    <label class="moodGoals">Eat a snack <img src="MoodGoalApple.jpg" class="goalImgs moodImgApple" alt="applePic">
+                        <input type="checkbox" id="goal2Apple">
+                        <span class="checkbubble"></span>
+                    </label>
+                    <label class="moodGoals">Go for a walk <img src="MoodGoalForest.jpg" class="goalImgs moodImgForest" alt="forestPic">
+                        <input type="checkbox" id="goal3Forest">
+                        <span class="checkbubble"></span>
+                    </label>
+                    <label class="moodGoals">Talk with a friend <img src="MoodGoalTalk.jpg" class="goalImgs moodImgTalk" alt="friendPic">
+                        <input type="checkbox" id="goal4Talk">
+                        <span class="checkbubble"></span>
+                    </label>
                 </div>    
                 <div class="activityTextCol2">
-                    <input type="text" id="activity4" placeholder="Activity #4">
-                    <input type="text" id="activity5" placeholder="Activity #5">
-                    <button type="submit" class="moodSaveAct">Save my activities</button>
+                    <label class="moodGoals">Buy some groceries <img src="MoodGoalGrocery.jpg" class="goalImgs moodImgGroc" alt="GroceryPic">
+                        <input type="checkbox" id="goal5Groc">
+                        <span class="checkbubble"></span>
+                    </label>
+                    <label class="moodGoals">Do the laundry <img src="MoodGoalLaund.jpg" class="goalImgs moodImgLaund" alt="laundryPic">
+                        <input type="checkbox" id="goal5Laund">
+                        <span class="checkbubble"></span>
+                    </label>
+                        <input type="text" class="activityText moodFriend" placeholder="Type in your own goal">
+                    <button type="button" class="moodButtons moodSaveGoal">Save my Goals</button>
                 </div>
             </div>
 
             <h3>Gratefulness Journal</h3>
-            <p>List some activities you enjoy.<a><img src="Question Icon.svg" alt="questionIcon" class="moodQicon"><span class="questionInfo">If you're feeling down, come back to this list 
-                to remind you of some fun things to do!</span></a></p>
-            <div class="activityText">    
-                <div class="activityTextCol1">
-                    <input type="text" id="activity1" placeholder="Activity #1">
-                    <input type="text" id="activity2" placeholder="Activity #2">
-                    <input type="text" id="activity3" placeholder="Activity #3">
-                </div>    
-                <div class="activityTextCol2">
-                    <input type="text" id="activity4" placeholder="Activity #4">
-                    <input type="text" id="activity5" placeholder="Activity #5">
-                    <button type="submit" class="moodSaveAct">Save my activities</button>
-                </div>
+            <p>Write something that you are grateful for today.<a><img src="Question Icon.svg" alt="questionIcon" class="moodQicon">
+                <span class="questionInfo">We'll remind you to try to write at least one new thing each day.</span></a></p>
+                <textarea name="Gratefulness Jouurnal" id="moodJournal" cols="95" rows="3" placeholder="What are you grateful for today?"></textarea>
+                <button type="submit" class="moodButtons moodSaveGfn">Save to my Journal</button>
             </div>
     </div>
 

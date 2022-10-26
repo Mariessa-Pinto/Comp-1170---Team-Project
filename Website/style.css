@@ -195,7 +195,7 @@ a{
 
 /*Sleep Page*/
 
-.sleepBody, sleepHTML{
+.sleepBody, .sleepHTML{
     background-color: #C0D6DF;
     height: 100%;
     margin: 0px;
@@ -323,10 +323,9 @@ a{
 
 /*Mood Page*/
 
-    /* >BUTTON DOESN'T WORK. WHEN ADD BACKGROUND COLOR, DISABLES BUTTON?*/
     /*NEED TO FIX THE TIMING. ANIMATION TIMINGS NOT SYNCED?*/
-    /*Add working nav links to header, and bold underline to mood button.
-    /*Next major components to work on: Goal setting and Gratefulness journal*/
+    /*Add working nav links to header, and bold underline to mood button.*/
+
 .moodBody , .moodHTML {
     height: 100%;
     margin: 0px;
@@ -343,12 +342,52 @@ a{
     text-decoration: none;
 }
 
+.moodNavMeditation{
+    font-size: 21px;
+    color: #000000;
+}
+
+.moodNavMood{
+    font-size: 21px;
+    font-weight: 700;
+    text-decoration: underline;
+    color: #000000;
+}
+
+span.searchField {
+    position: absolute;
+    display: none; 
+    width: auto;
+    right: 20%; 
+    color: #F9F4F2;
+    padding: 5px;
+}
+
+input#searchBar{
+    font-size: 20px;
+    border-radius: 10px;
+}
+
+/*Need to fine tune the positioning/visibility*/
+a:hover .searchField {
+    display: block; 
+    text-align: center;
+
+}
+
 .moodSection1{
     text-indent: 19%;
     height: 50%; 
     background-color: #7E8391;
     color: #F9F4F2;
+}
 
+.moodSection1 h3{
+    font-size: 24px;
+}
+
+h1.moodAnimationSlogan{
+    font-size: 70px;
 }
 
 .moodSpeakerImg{
@@ -365,13 +404,14 @@ a{
 .moodAnimationSlogan::before{
     position: absolute;
     width: 70%;
-    left: 15%;
-    top: 38%;
+    left: 10%;
+    top: 45%;
     content: '';
-    animation: animate infinite 40s;
+    animation: animate infinite 50s;
     font-size: 45px;
     font-weight: 800;
     text-align: center;
+    color: #42113C;
 
 }
 
@@ -397,11 +437,11 @@ a{
     position: relative;
     width: 50%;
     height: 2%;
-    top: 80%;
+    top: 65%;
     left: 25%;
     background: #F9F4F2;
     border-radius: 5px;
-    animation: countDown infinite 8s;
+    animation: countDown infinite 10s;
 }
 
 @keyframes countDown{
@@ -415,6 +455,11 @@ a{
     padding-left: 5px;
 }
 
+.moodExercises{
+    position: relative;
+    top: 50px;
+}
+
 .moodExercises h3, .moodExercises p{
     position: relative;
     left: 19%;
@@ -424,7 +469,7 @@ a{
     height: 25px;
 }
 
-a span {
+a .questionInfo {
     position: absolute;
     display: none; 
     width: auto;
@@ -437,13 +482,13 @@ a span {
 
 a:hover .questionInfo {
     display: block; 
-    text-align: center;}
-
-
+    text-align: center;
+}
 
 .activityText{
     display: flex;
     justify-content: center;
+    padding-bottom: 5%;
 }
 
 .activityTextCol1, .activityTextCol2{
@@ -451,7 +496,7 @@ a:hover .questionInfo {
     height: 15%;
 }
 
-.activityText input, .moodSaveAct{
+.activityText input, .moodSaveExc, .moodSaveGoal, .moodSaveJou{
     width: 90%;
     border-radius: 20px;
     border: 1px solid #444444;
@@ -460,12 +505,134 @@ a:hover .questionInfo {
     padding: 1% 2%;
 }
 
-button.moodSaveAct{
+.moodButtons:hover{
+    background-color: #444444;
+    cursor: pointer;
+}
+
+.moodSaveExc, .moodSaveGoal, .moodSaveJou, .moodSaveGfn{
         background: #42113C;
         color: #F9F4F2;
 }
 
+/*Padding in between buttons for goals is not the same as other
+ealier fields. Margins overlap???*/
+.moodGoals {
+    display: block;
+    position: relative;
+    cursor: pointer;
+    font-size: 20px;
+    background-color: transparent;
+    border-radius: 20px;
+    margin: 3% 0 3% 5%;
+    padding: 1% 0 1% 15%;
+    color: #F9F4F2;
+    font-weight: bold;
+    -webkit-text-stroke-color: #444444;
+    -webkit-text-stroke-width: 1px;
+  }
+  
+.moodGoals input {
+    position: absolute;
+    opacity: 0;
+    height: 0;
+    width: 0;
+  }
+  
+.checkbubble {
+    position: absolute;
+    top: 10%;
+    left: 2%;
+    height: 75%;
+    width: 5%;
+    background-color: #F9F4F2;
+    border: 1px solid #444444;
+    border-radius: 20px;
+  }
+  
+  /*The squiggly line select all the .checkbubble classes within "input"*/
+.moodGoals:hover input ~ .checkbubble {
+    background-color: #C1C7DE;
+  }
+.moodGoals input:checked ~ .checkbubble {
+    background-color: #3D3F46;
+    border: 1px solid #f9f3f2;
+  }
+
+.goalImgs{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    top: 0px;
+    left: 0px;
+    border-radius: 20px;
+    border: 1px solid #f9f3f2;
+    z-index: -1;
+}
+
+.moodImgBed{
+    object-position: 25% 77%;
+}
+
+.moodImgApple{
+    object-position: 0% 40%;
+}
+
+.moodImgForest{
+    object-position: 0% 83%;
+}
+
+.moodImgTalk{
+    object-position: 0% 40%;
+}
+
+.moodImgGroc{
+    object-position: 0% 50%;
+}
+
+.moodImgLaund{
+    object-position: 0% 88%;
+}
+
+.moodImgFriend{
+    object-position: 0% 65%;
+}
+
+/*PLACEHOLDER TEXT IS TOO LIGHT RIGHT NOW
+and spacing and widths are not even*/
+input.moodFriend{
+    background: url('MoodGoalFlower.jpg');
+    background-size: cover;
+    background-position: 0% 62%;
+    padding-left:20px;
+}
+
+#moodJournal{
+    position: relative;
+    width: 66%;
+    left: 19%;
+    border-radius: 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding: 1%;
+
+}
+
+.moodSaveGfn{
+    position: relative;
+    left: 14%;
+    width: 67%;
+    border-radius: 20px;
+    border: 1px solid #444444;
+    font-size: 20px;
+    margin: 3% 0 3% 5%;
+    padding: 1% 2%;
+}
+
 .moodFooter{
+    position: relative;
+    top: 50px;
+    bottom: 0%;
     background-color: #3D3F46;
     height: 369px;
     display: flex;
