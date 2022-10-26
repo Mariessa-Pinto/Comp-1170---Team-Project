@@ -793,10 +793,11 @@ a{
 }
 .ResSection2{
     background-color: #D6EDFF;
-    height: 2750px;
     justify-content: center;
 }
-
+.books{
+    padding-left: 300px;
+}
 .row-one{
     display: flex;
     flex-direction: row;
@@ -818,7 +819,6 @@ a{
 }
 .ResSection2Part2{
     display: flex;
-   justify-content: center;
     gap: 5px;
 }
 .ResBox1{  
@@ -873,6 +873,9 @@ a{
 .ResBoxTop{
     padding-top: 15px;
     padding-left: 35px;
+}
+.ResSection2Part3{
+    justify-content: center;
 }
 
 .ResBoxBottom{
