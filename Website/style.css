@@ -371,7 +371,7 @@ a{
 
 
 /*Landing Page*/ 
-.lanBody, lanhtml {
+.lanBody, .lanhtml {
     height: 100%;
     margin: 0px;
     background-color: #89BAD9;
