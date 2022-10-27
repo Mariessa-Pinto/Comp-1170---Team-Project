@@ -503,10 +503,6 @@ a{
 
 
 /*Mood Page*/
-
-    /*NEED TO FIX THE TIMING. ANIMATION TIMINGS NOT SYNCED?*/
-    /*Add working nav links to header, and bold underline to mood button.*/
-
 .moodBody , .moodHTML {
     height: 100%;
     margin: 0px;
@@ -539,7 +535,8 @@ span.searchField {
     position: absolute;
     display: none; 
     width: auto;
-    right: 20%; 
+    top: 4%;
+    right: 15%; 
     color: #F9F4F2;
     padding: 5px;
 }
@@ -549,7 +546,6 @@ input#searchBar{
     border-radius: 10px;
 }
 
-/*Need to fine tune the positioning/visibility*/
 a:hover .searchField {
     display: block; 
     text-align: center;
@@ -557,10 +553,11 @@ a:hover .searchField {
 }
 
 .moodSection1{
-    text-indent: 19%;
-    height: 50%; 
+    height: 500px; 
     background-color: #7E8391;
     color: #F9F4F2;
+    padding-left: 100px;
+    padding-top: 100px;
 }
 
 .moodSection1 h3{
@@ -572,8 +569,12 @@ h1.moodAnimationSlogan{
 }
 
 .moodSpeakerImg{
-    height: 25px;
+    height: 50px;
     padding-left: 10px;
+}
+
+.moodSpeakerImg:hover{
+    cursor: pointer;
 }
 
 .moodAnimation{
@@ -585,14 +586,17 @@ h1.moodAnimationSlogan{
 .moodAnimationSlogan::before{
     position: absolute;
     width: 70%;
-    left: 10%;
-    top: 45%;
+    left: 15%;
+    top: 70%;
     content: '';
     animation: animate infinite 50s;
-    font-size: 45px;
+    font-size: 60px;
     font-weight: 800;
     text-align: center;
-    color: #42113C;
+    color: #F9F4F2;
+    font-weight: bolder;
+    -webkit-text-stroke-color: black;
+    -webkit-text-stroke-width: 2px;
 
 }
 
@@ -614,7 +618,8 @@ h1.moodAnimationSlogan{
     }
 }
 
-.timerBar{
+/*Timer bar works but I can't get it to sync properly with the words. Removed for now :(*/
+/*.timerBar{
     position: relative;
     width: 50%;
     height: 2%;
@@ -629,21 +634,17 @@ h1.moodAnimationSlogan{
     100%{
         width: 0%;
     }
-}
+}*/
 
 .moodQuestionImg{
     height: 20px;
     padding-left: 5px;
 }
 
-.moodExercises{
-    position: relative;
-    top: 50px;
-}
-
 .moodExercises h3, .moodExercises p{
     position: relative;
     left: 19%;
+    font-size: 30px;
 }
 
 .moodQicon{
@@ -653,12 +654,12 @@ h1.moodAnimationSlogan{
 a .questionInfo {
     position: absolute;
     display: none; 
-    width: auto;
     left: 15%; 
     color: #F9F4F2; 
     background: #3D3F46; 
     padding: 5px;
     border-radius: 10px;
+    font-size: 20px;
 }
 
 a:hover .questionInfo {
@@ -681,9 +682,9 @@ a:hover .questionInfo {
     width: 90%;
     border-radius: 20px;
     border: 1px solid #444444;
-    font-size: 20px;
+    font-size: 24px;
     margin: 3% 0 3% 5%;
-    padding: 1% 2%;
+    padding: 1% 4%;
 }
 
 .moodButtons:hover{
@@ -692,24 +693,27 @@ a:hover .questionInfo {
 }
 
 .moodSaveExc, .moodSaveGoal, .moodSaveJou, .moodSaveGfn{
-        background: #42113C;
-        color: #F9F4F2;
+    background: #42113C;
+    color: #F9F4F2;
+    width: 98%;
 }
 
-/*Padding in between buttons for goals is not the same as other
-ealier fields. Margins overlap???*/
+.moodSaveGoal{
+    margin: 2.5% 0 3% 5%;
+}
+
 .moodGoals {
     display: block;
     position: relative;
     cursor: pointer;
-    font-size: 20px;
+    font-size: 24px;
     background-color: transparent;
     border-radius: 20px;
-    margin: 3% 0 3% 5%;
+    margin: 6% -3% 6% 5%;
     padding: 1% 0 1% 15%;
     color: #F9F4F2;
     font-weight: bold;
-    -webkit-text-stroke-color: #444444;
+    -webkit-text-stroke-color: black;
     -webkit-text-stroke-width: 1px;
   }
   
@@ -725,13 +729,14 @@ ealier fields. Margins overlap???*/
     top: 10%;
     left: 2%;
     height: 75%;
-    width: 5%;
+    width: 6%;
     background-color: #F9F4F2;
-    border: 1px solid #444444;
+    border: 1px solid #f9f3f2;
+    border: 1px solid 000000;
     border-radius: 20px;
   }
   
-  /*The squiggly line select all the .checkbubble classes within "input"*/
+  /*The squiggly line = select all the .checkbubble classes within "input"*/
 .moodGoals:hover input ~ .checkbubble {
     background-color: #C1C7DE;
   }
@@ -780,13 +785,23 @@ ealier fields. Margins overlap???*/
     object-position: 0% 65%;
 }
 
-/*PLACEHOLDER TEXT IS TOO LIGHT RIGHT NOW
-and spacing and widths are not even*/
 input.moodFriend{
     background: url('MoodGoalFlower.jpg');
     background-size: cover;
     background-position: 0% 62%;
     padding-left:20px;
+    color: #f9f3f2;
+    font-weight: bold;
+    -webkit-text-stroke-color: #444444;
+    -webkit-text-stroke-width: 1px;
+}
+
+input.moodFriend::-moz-placeholder{
+    opacity: 1;
+    color: #f9f3f2;
+    font-weight: bold;
+    -webkit-text-stroke-color: #444444;
+    -webkit-text-stroke-width: 1px;
 }
 
 #moodJournal{
@@ -795,8 +810,9 @@ input.moodFriend{
     left: 19%;
     border-radius: 20px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 24px;
+    margin: 1%;
     padding: 1%;
-
 }
 
 .moodSaveGfn{
@@ -805,7 +821,7 @@ input.moodFriend{
     width: 67%;
     border-radius: 20px;
     border: 1px solid #444444;
-    font-size: 20px;
+    font-size: 24px;
     margin: 3% 0 3% 5%;
     padding: 1% 2%;
 }
@@ -819,4 +835,8 @@ input.moodFriend{
     display: flex;
     flex-direction: row;
     justify-content: space-around;
+}
+
+.FooterSectionTitle{
+    font-weight: bold;
 }
