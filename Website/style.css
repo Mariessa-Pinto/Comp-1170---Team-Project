@@ -865,7 +865,7 @@ a {
 
 /*Sleep Page*/
 
-.sleepBody, sleepHTML{
+.sleepBody, .sleepHTML{
     background-color: #C0D6DF;
     height: 100%;
     margin: 0px;
@@ -882,14 +882,61 @@ a {
     align-items: center;
 }
 
-.a{
-    text-decoration:none;
-    color:#000000;
+.sleepNavSleep{
+    font-size: 21px;
+    font-weight: 700;
+    text-decoration: underline;
+    color: #000000;
 }
 
-.sleepNav a:hover {
+.sleepNavSleep:hover{
     border-bottom: 2px solid #000000;
     font-weight:bold;
+}
+
+.sleepNavMed{
+    font-size: 21px;
+    color: #000000;
+    text-decoration: none;
+}
+
+.sleepNavMed:hover{
+    border-bottom: 2px solid #000000;
+    font-weight:bold;
+}
+
+.sleepNavMed:active{
+    border-bottom: 2px solid #000000;
+}
+
+.sleepNavMood{
+    font-size: 21px;
+    color: #000000;
+    text-decoration: none;
+}
+
+.sleepNavMood:hover{
+    border-bottom: 2px solid #000000;
+    font-weight:bold;
+}
+
+.sleepNavMood:active{
+    border-bottom: 2px solid #000000;
+}
+
+.sleepNavRes{
+    font-size: 21px;
+    color: #000000;
+    text-decoration: none; 
+}
+
+.sleepNavRes:hover{
+    border-bottom: 2px solid #000000;
+    font-weight:bold;
+}
+
+.sleepNavRes:active{
+    border-bottom: 2px solid #000000;
 }
 
 .sleepSearchIcon {
@@ -911,9 +958,7 @@ a {
     font-weight: 700;
 }
 
-.sleepNav a.active {
-    border-bottom: 2px solid #000000;
-  }
+
 
 .sleepTopColumn {
     background-color: #28444D;
@@ -1278,6 +1323,8 @@ a {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 
 }
+
+
 .moodNav{
     height: 100px;
     display: flex;
@@ -1355,7 +1402,7 @@ h1.moodAnimationSlogan{
     position: absolute;
     width: 70%;
     left: 15%;
-    top: 70%;
+    top: 50%;
     content: '';
     animation: animate infinite 50s;
     font-size: 60px;
@@ -1595,9 +1642,6 @@ input.moodFriend::-moz-placeholder{
 }
 
 .moodFooter{
-    position: relative;
-    top: 50px;
-    bottom: 0%;
     background-color: #3D3F46;
     height: 369px;
     display: flex;
@@ -1605,8 +1649,60 @@ input.moodFriend::-moz-placeholder{
     justify-content: space-around;
 }
 
-.FooterSectionTitle{
-    font-weight: bold;
+.moodFooter1{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.moodFooterListItem{
+    font-size: 18px;
+    color: #F9F4F2;
+}
+
+.moodFooterSectionTitle{
+    font-size: 24pt;
+    padding-bottom: 5px;
+    font-weight: 600;
+    color: #F9F4F2;
+}
+
+.moodFooter1Header {
+    margin: 0;
+    padding-bottom: 10px;
+    color: #F9F4F2;
+    font-size: 38px;
+}
+
+.moodFooter1Header{
+    cursor: pointer;
+}
+
+.moodFooter1Description {
+    margin: 0;
+    font-size: 18px;
+    color: #F9F4F2;
+}
+
+.moodFooter2{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 80px;
+}
+
+.moodFooter2List {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    color: #F9F4F2;
+}
+
+.moodFooter2List:hover{
+    cursor: pointer;
 }
 
 
