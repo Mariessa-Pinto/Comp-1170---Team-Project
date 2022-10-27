@@ -413,7 +413,7 @@ a {
     color: #000000;
 }
 
-.mNavMeditation {
+.iNavMeditation {
     font-size: 21px;
     color: #000000;
 }
@@ -573,48 +573,51 @@ a {
     padding-left: 30px;
 }
 
-
+.lanMainBody{
+    display: flex;
+    flex-direction: column;
+}
 
 .section3 {
    align-items: center;
-   position:absolute;
-   height: 100%;
    width: 100%;
 }
 
+.videorow{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
 
+.topImages{
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+    padding-bottom: 50px;
+    justify-content: center;
+}
 
 .vid {
-  width: 800px;
-  height: 478px;
-  position: absolute;
   left: 35%;
   font-family: Verdana;
   font-weight: Regular;
   font-size: 34px;
   opacity: 1;
   text-align: center;
-    
 }
-
-
-
 
 .road{
     width: 800px;
     height: 478px;
-    position: absolute;
+    object-fit: cover;
     top: 5%;
     opacity:0.4
-    
-   
-
 
 }
 .van{
     width: 800px;
     height: 478px;
-    position: absolute;
+    object-fit: cover;
     top: 5%;
     left: 70%;
     opacity:0.4
@@ -626,23 +629,23 @@ a {
     width: 800px;
     height: 478px;
     opacity: 1;
-    position: absolute;
+    object-fit: cover;
     top: 5%;
     left: 35%;
-    overflow: hidden;
+    display: block;
 }
 .play-button{
     width: 100px;
     height: 100px;
     opacity: 1;
+    z-index: 10;
     position: absolute;
-    top: 20%;
-    left: 50%;
-    overflow: hidden;
+    top: 189px;
+    left: 350px;
 
 }
 .afterVid {
-     height: 33%;
+    height: 33%;
     width: 100%;
     justify-content: center;
     align-items: center;
@@ -651,63 +654,87 @@ a {
 .name-text{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: x-large;
-    position: absolute;
-    top: 2700px;
-    left: 1100px;
 }
 
-
-.pictures{
-
+.section4{
     display: flex;
-    height: 100%;
-    width: 100%;
-    align-items: center;
-    justify-content: center;
-    padding: 20px;
+    flex-direction: column;
 }
 
+.container1{
+    position:relative;
+    display: inline-block;
+}
+
+.container2{
+    position:relative;
+    display: inline-block;
+}
+
+.container3{
+    position:relative;
+    display: inline-block;
+}
+
+.bottomRow1{
+    display: flex;
+    flex-direction: column;
+}
+
+.bottomRow2{
+    display: flex;
+    flex-direction: column;
+}
+
+.bottomRow3{
+    display: flex;
+    flex-direction: column;
+}
 
 .mountain{
-     width: 620px;
-    height: 446px;
-    position: absolute;
-    top: 2850px;
-    left: 550px;
-    overflow: hidden;
     border-radius: 25px;
-   
+    transition: 300ms;
+    display: block;
+    width: 620px;
+    height: 446px;
 }
+
 .mountain:hover{
     cursor: pointer;
     box-shadow: 10px 10px 30px black;
     transition: 300ms;
 }
+
 .hike{
     width: 620px;
     height: 446px;
-    position: absolute;
-    top: 2850px;
-    left: 1200px;
-    overflow: hidden;
+    display: block;
     border-radius: 25px;
-
+    transition: 300ms;
+    object-fit: cover;
 }
+
 .hike:hover{
     cursor: pointer;
     box-shadow: 10px 10px 30px black;
     transition: 300ms;
 }
+
+.bottom-pics{
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+    justify-content: center;
+}
+
 .roadtrip{
     width: 400px;
     height: 238px;
-    position: absolute;
-    top: 3350px;
-    left: 1420px;
-    overflow: hidden;
+    object-fit: cover;
     border-radius: 25px;
-    
+    transition: 300mx;
 }
+
 .roadtrip:hover{
     cursor: pointer;
     box-shadow: 10px 10px 30px black;
@@ -716,67 +743,63 @@ a {
 .morning-breeze{
     width: 400px;
     height: 238px;
-    position: absolute;
-    top: 3350px;
-    left: 1000px;
-    overflow: hidden;
+    object-fit: cover;
     border-radius: 25px;
-
+    transition: 300ms;
 }
+
 .morning-breeze:hover{
     cursor: pointer;
     box-shadow: 10px 10px 30px black;
     transition: 300ms;
 }
+
 .field{
     width: 400px;
     height: 238px;
-    position: absolute;
-    top: 3350px;
-    left: 580px;
-    overflow: hidden;
+    object-fit: cover;
     border-radius: 25px;
+    transition: 300ms;
 }
+
 .field:hover{
     cursor: pointer;
     box-shadow: 10px 10px 30px black;
     transition: 300ms;
 }
+
 .firstline{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     color: white;
     font-size:xx-large;
+    z-index: 10;
     position: absolute;
-    top: 2875px;
-    left: 575px;
+    top: 0;
+    left: 30px;
 }
+
 .secondline{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     color: white;
     font-size:xx-large;
+    z-index: 10;
     position: absolute;
-    top: 2875px;
-    left: 1600px;
+    top: 0;
+    left: 30px;
 }
+
 .label{
-    position: absolute;
-    top: 3600px;
-    left: 580px;
+    font-size: 24px;
+    color: #000000;
 }
 .labeltwo{
-    position: absolute;
-    top: 3600px;
-    left: 1000px;
+    font-size: 24px;
+    color: #000000;
 }
 .labelthree{
-    position: absolute;
-    top: 3600px;
-    left: 1420px;
+    font-size: 24px;
+    color: #000000;
 }
-
-
-
-
 
 
 
