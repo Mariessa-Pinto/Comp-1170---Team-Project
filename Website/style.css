@@ -798,6 +798,18 @@ a{
 .books{
     padding-left: 300px;
 }
+.Team{
+    padding-left: 350px;
+}
+.Reviews{
+    padding-left: 350px;
+}
+.FAQ{
+    padding-left: 350px;
+}
+.Extrahelp{
+    padding-left: 350px;
+}
 .row-one{
     display: flex;
     flex-direction: row;
@@ -901,19 +913,28 @@ select{
     justify-content: center;
 }
 
-
+.ResProBoxAl{
+    padding-left: 640px;
+}
 
 .ResourcesProBox{
     display: flex;
     flex-direction: column;
     background-color: #F9F4F2;
-    width: 1100px;
+    width: 700px;
     border-radius: 40px;
     height: 280px;
-    justify-content: center;
+    padding-left: 80px;
 }
-
-
+.ResHSAL{
+    padding-left: 500px;
+}
+.ResFAQ{
+    padding-left: 590px;
+}
+.ResHelp{
+    padding-left: 650px;
+}
 .ResourcesProfileIcon{
     width: 70px;
     height: 70px;
