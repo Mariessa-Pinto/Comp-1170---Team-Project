@@ -1653,11 +1653,15 @@ input.moodFriend::-moz-placeholder{
 
 .ResSection1{
     background-color: #40798C;
-    height: 831px;
+    height: 920px;
+}
+
+.resHeading{
+    font-size: 30px;
 }
 
 .ResSection1Header{
-    margin: 0;
+    padding-top: 100px;
     font-size: 70px;
     color: white;
     text-align: center;
@@ -1725,58 +1729,41 @@ input.moodFriend::-moz-placeholder{
     font-size: 20px;
     cursor: pointer;
 }
+
 .ResSection2{
     background-color: #D6EDFF;
     justify-content: center;
+    height: 93%;
+    margin: 0;
+    padding: 5px 11% 0px 4%;
 }
-.books{
-    padding-left: 300px;
-}
-.Team{
-    padding-left: 350px;
-}
-.Reviews{
-    padding-left: 350px;
-}
-.FAQ{
-    padding-left: 350px;
-}
-.Extrahelp{
-    padding-left: 350px;
-}
+
 .row-one{
     display: flex;
-    flex-direction: row;
-    align-items: flex-start;
-    gap: 13px;
-    cursor: pointer;
-    object-fit: cover;
-    justify-content: center;
-}
-.row-two{
-    display: flex;
-    flex-direction: row;
-    align-items: flex-start;
-    gap: 13px;
+    justify-content: space-between;
     padding-top: 8px;
     cursor: pointer;
     object-fit: cover;
-    justify-content: center;
+}
+.row-two{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 8px;
+    cursor: pointer;
+    object-fit: cover;
+}
+.ResSection2Part1{
+    margin-left: 9%;
 }
 .ResSection2Part2{
-    display: flex;
-    gap: 5px;
+    height: 88%;
+    margin: 0;
+    padding: 5px 11.5% 0px 11.5%;
 }
+
 .ResBox1{  
     display: flex;
-    flex-direction: row;
-    align-items: flex-start;
-    padding-top: 70px;
-    padding-bottom: 60px;
-    gap: 50px;
-    justify-content: center;
-    flex-direction: row;
-    align-items: flex-start;
+    justify-content: space-between;
 }
 
 .ResRightBox{
@@ -1786,7 +1773,7 @@ input.moodFriend::-moz-placeholder{
     width: 344px;
     border-radius: 40px;
     height: 470px;
-
+    text-align: center;
 }
 .ResBox2{
     display: flex;
@@ -1795,6 +1782,7 @@ input.moodFriend::-moz-placeholder{
     width: 344px;
     border-radius: 40px;
     height: 470px;
+    text-align: center;
 }
 .ResBox3{
     display: flex;
@@ -1803,6 +1791,7 @@ input.moodFriend::-moz-placeholder{
     width: 344px;
     border-radius: 40px;
     height: 470px;
+    text-align: center;
 }
 
 
@@ -1821,7 +1810,8 @@ input.moodFriend::-moz-placeholder{
     padding-left: 35px;
 }
 .ResSection2Part3{
-    justify-content: center;
+    padding: 5px 11% 0px 4%;
+    margin: 0 0 0 7.5%;
 }
 
 .ResBoxBottom{
@@ -1836,7 +1826,7 @@ input.moodFriend::-moz-placeholder{
 }
 select{
     padding-left: 20%;
-    width: 900px;
+    width: 87.5%;
     height: 50px;
     padding: 0;
     display: flex;
@@ -1847,52 +1837,37 @@ select{
     justify-content: center;
 }
 
-.ResProBoxAl{
-    padding-left: 640px;
-}
-
 .ResourcesProBox{
     display: flex;
     flex-direction: column;
+    align-items: center;
     background-color: #F9F4F2;
-    width: 700px;
+    width: 100%;
     border-radius: 40px;
     height: 280px;
-    padding-left: 80px;
 }
-.ResHSAL{
-    padding-left: 500px;
-}
-.ResFAQ{
-    padding-left: 590px;
-}
-.ResHelp{
-    padding-left: 650px;
-}
+
 .ResourcesProfileIcon{
     width: 70px;
     height: 70px;
     object-fit: cover;
     padding-left: 15px;
     padding-top: 10px;
+    padding: 10px 15px 0 15px
 }
 
 .ResourcesProfile{
     display: flex;
-    flex-direction: row;
-    align-items: center;
-    gap: 10px;
-    padding-left: 50px;
-    padding-top: 10px;
+    margin: 4% 0%;
+    /*padding-left: 50px;
+    padding-top: 10px;*/
 }
 
 .ResourcesProfile2{
     display: flex;
-    flex-direction: row;
-    align-items: center;
-    padding-left: 50px;
-    padding-top: 70px;
-    gap: 10px;
+    margin: 3% 0%;
+    /*padding-left: 50px;
+    padding-top: 70px;*/
 }
 
 .ResourcesProText{
@@ -1908,10 +1883,18 @@ select{
     gap: 5px;
 }
 
+.ResSection2Part4{
+    padding: 5px 0% 0px 11.5%;
+}
+
 .ResourcesS1HeaderText{
     font-size: 24px;
     color: #191919;
     margin: 0;
+}
+
+.ResSection2Part5{
+    padding: 5px 11.5% 0px 11.5%;
 }
 
 .ResourcesS1-1RightTop{
@@ -1941,7 +1924,8 @@ select{
     flex-direction: column;
 }
 .helpbuttons{
-    justify-content: center;
+    display: flex;
+    justify-content: space-between;
 }
 .btn-help{
     background-color: #28444D; 
