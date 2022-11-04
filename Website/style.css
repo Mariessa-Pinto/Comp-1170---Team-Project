@@ -408,20 +408,36 @@ a {
     font-size: 21px;
     color: #000000;
 }
+.mNavSleep:hover{
+    border-bottom: 2px solid #000000;
+    font-weight:bold;
+}
 
 .mNavMood {
     font-size: 21px;
     color: #000000;
+}
+.mNavMood:hover{
+    border-bottom: 2px solid #000000;
+    font-weight:bold;
 }
 
 .iNavMeditation {
     font-size: 21px;
     color: #000000;
 }
+.iNavMeditation:hover{
+    border-bottom: 2px solid #000000;
+    font-weight:bold;
+}
 
 .mNavResource {
     font-size: 21px;
     color: #000000;
+}
+.mNavResource:hover{
+    border-bottom: 2px solid #000000;
+    font-weight:bold;
 }
 
 .searchIcon1 {
@@ -429,6 +445,31 @@ a {
     height: 60px;
     object-fit: cover;
 }
+span.searchField {
+    position: absolute;
+    display: none; 
+    width: auto;
+    top: 4%;
+    right: 15%; 
+    color: #F9F4F2;
+    padding: 5px;
+}
+
+input#searchBar{
+    font-size: 20px;
+    border-radius: 10px;
+}
+
+a:hover .searchField {
+    display: block; 
+    text-align: center;
+
+}
+
+
+
+
+
 
 /*Nav Bar End*/
 
@@ -468,6 +509,7 @@ a {
 }
 
 .morningRoutine {
+    margin-top: 20px;
     color: rgba(0, 0, 0, 1);
     text-align: center;
     height: 350px;
@@ -475,6 +517,7 @@ a {
 }
 
 .morning {
+    margin-top: 20px;
     height: 280px;
     display: flex;
     text-align: left;
@@ -511,6 +554,7 @@ a {
 }
 
 .afternoon {
+    margin-top: 20px;
     height: 280px;
     display: flex;
     text-align: left;
@@ -584,6 +628,7 @@ a {
 
 
 .night {
+    margin-top: 20px;
     height: 280px;
     display: flex;
     text-align: left;
@@ -696,6 +741,14 @@ a {
     font-size: x-large;
 }
 
+.topImages {
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    justify-content: center;
+    margin-left: 30px;
+}
+
 .section4{
     display: flex;
     flex-direction: column;
@@ -735,9 +788,10 @@ a {
 .mountains1{
     border-radius: 25px;
     transition: 300ms;
-    display: block;
+    display:block;
     width: 620px;
     height: 446px;
+    
 
 }
 
@@ -750,12 +804,13 @@ a {
 }
 
 .hike{
-    width: 620px;
+    width: 640px;
     height: 446px;
-    display: block;
+    display:block;
     border-radius: 25px;
     transition: 300ms;
     object-fit: cover;
+    
 }
 
 .hike:hover{
@@ -767,8 +822,9 @@ a {
 .bottom-pics{
     display: flex;
     flex-direction: row;
-    gap: 50px;
+    gap: 30px;
     justify-content: center;
+    margin-right: 25px;
 }
 
 .roadtrip{
