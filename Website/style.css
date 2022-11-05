@@ -2,7 +2,7 @@
 body , html {
     height: 100%;
     margin: 0px;
-    background-color: #C1DEC2;
+    background-color: #ffffff;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
@@ -16,8 +16,11 @@ a{
     height: 100px;
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
+    justify-content: space-between;
     align-items: center;
+    background-color: #D2ECFF;
+    padding-left: 100px;
+    padding-right: 100px;
 }
 
 .profilePic{
@@ -64,8 +67,14 @@ a{
 
 /*Section 1*/
 .mSection1{
-    background-color: #7E917F;
-    height: 831px;
+    background-color: #EFEFEF;
+    height: 549px;
+}
+
+.mSection1TopAlign{
+    display: flex;
+    flex-direction: column;
+    width: 1280px;
 }
 
 .mSection1Header{
@@ -77,27 +86,31 @@ a{
 .mSection1Slogan{
     font-size: 70px;
     color: #000000;
+    margin: 0;
 }
 
 .mSection1In{
     font-size: 34px;
     color: #000000;
+    animation-name: breathIn;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
 }
 
 .mSection1Out{
     font-size: 34px;
     color: #000000;
-}
-
-.mSection1Breath{
-    font-size: 34px;
-    color: #F9F4F2;
+    animation-name: breathOut;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
 }
 
 .mBreathInOut{
     display: flex;
     flex-direction: row;
-    gap: 500px;
+    gap: 100px;
+    align-items: center;
+    padding-top: 50px;
 }
 
 .mSloganWIcon{
@@ -114,10 +127,8 @@ a{
 
 .mSection1Top{
     display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    padding-left: 100px;
-    padding-top: 100px;
+    justify-content: center;
+    padding-top: 45px;
 }
 
 .mAnimatedCircle{
@@ -126,6 +137,51 @@ a{
     animation-name: breathCircle;
     animation-duration: 10s;
     animation-iteration-count: infinite;
+}
+
+@keyframes breathOut{
+    0%{
+        opacity: 0%;
+    }
+    40%{
+        opacity: 0%;
+    }
+    48%{
+        opacity: 10%;
+    }
+    52%{
+        opacity: 100%;
+    }
+    55%{
+        opacity: 100%;
+    }
+    90%{
+        opacity: 50%;
+    }
+    100%{
+        opacity: 10%;
+    }
+}
+
+@keyframes breathIn{
+    0%{
+        opacity: 10%;
+    }
+    5%{
+        opacity: 50%;
+    }
+    48%{
+        opacity: 100%;
+    }
+    52%{
+        opacity: 0%;
+    }
+    90%{
+        opacity: 0%;
+    }
+    100%{
+        opacity: 10%;
+    }
 }
 
 @keyframes breathCircle{
@@ -146,8 +202,15 @@ a{
 /*Section2*/
 
 .mSection2{
-    background-color: #C1DEC2;
-    height: 2750px;
+    background-color: #ffffff;
+    height: 1506px;
+    display: flex;
+    justify-content: center;
+}
+
+.mSection2Align{
+    display: flex;
+    flex-direction: column;
 }
 
 .mBoxImage{
@@ -158,48 +221,34 @@ a{
     border-bottom-left-radius: 40px;
 }
 
-.mBoxImage:hover{
-    cursor: pointer;
-}
 
 .mS1-1Header{
     font-size: 34px;
     color: #000000;
-    padding-left: 7%;
-    padding-bottom: 50px;
+    padding-bottom: 2px;
     padding-top: 130px;
 }
 
 .mS1-1SubHeader{
     font-size: 34px;
     color: #000000;
-    padding-left: 9%;
-    padding-bottom: 30px;
-}
-
-.mS1IconS:hover{
-    cursor: pointer;
 }
 
 .mSection2-1Box{  
     display: flex;
     flex-direction: row;
     justify-content: center;
-    padding-bottom: 60px;
+    padding-bottom: 16px;
 }
 
 .mS1-1RightBox{
     display: flex;
     flex-direction: column;
-    background-color: #F9F4F2;
+    background-color: #EFEFEF;
     width: 760px;
     border-top-right-radius: 40px;
     border-bottom-right-radius: 40px;
     height: 280px;
-}
-
-.mS1-1RightBox:hover{
-    cursor: pointer;
 }
 
 .mClockIcon{
@@ -251,6 +300,14 @@ a{
     padding-top: 70px;
 }
 
+.mSection2Part2{
+    padding-bottom: 120px;
+    display: flex;
+    justify-content: center;
+}
+
+.mSection2Part2Align
+
 .m2BoxImage{
     width: 400px;
     height: 238px;
@@ -267,13 +324,15 @@ a{
 .mS2TopRow{
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
+    justify-content: center;
+    gap: 40px;
 }
 
 .mS2BottomRow{
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
+    justify-content: center;
+    gap: 40px;
 }
 
 .mS2Box{
@@ -286,25 +345,20 @@ a{
 .mS2-2TopText{
     font-size: 24px;
     color: #191919;
-}
-
-.mS2-2BottomText{
-    font-size: 24px;
-    color: #444444;
+    margin-top: 0;
 }
 
 .S2-2Header{
     font-size: 34px;
     color: #000000;
-    padding-left: 7%;
     padding-bottom: 30px;
     padding-top: 40px;
 }
 
 /*Footer*/
 .mFooter{
-    background-color: #3C453C;
-    height: 369px;
+    background-color: #D2ECFF;
+    height: 250px;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
@@ -318,31 +372,28 @@ a{
 
 .mFooterListItem{
     font-size: 18px;
-    color: #F9F4F2;
+    color: #000000;
 }
 
 .mFooterSectionTitle{
-    font-size: 24pt;
+    font-size: 24px;
     padding-bottom: 5px;
     font-weight: 600;
-    color: #F9F4F2;
+    color: #000000;
 }
 
 .mFooter1Header {
     margin: 0;
     padding-bottom: 10px;
-    color: #F9F4F2;
+    color: #000000;
     font-size: 38px;
 }
 
-.mFooter1Header{
-    cursor: pointer;
-}
 
 .mFooter1Description {
     margin: 0;
     font-size: 18px;
-    color: #F9F4F2;
+    color: #000000;
 }
 
 .mFooter2{
@@ -359,11 +410,7 @@ a{
     display: flex;
     flex-direction: column;
     gap: 10px;
-    color: #F9F4F2;
-}
-
-.mFooter2List:hover{
-    cursor: pointer;
+    color: #000000;
 }
 
 /*END FOOTER*/
