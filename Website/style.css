@@ -16,11 +16,18 @@ a{
     height: 100px;
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     background-color: #D2ECFF;
-    padding-left: 100px;
-    padding-right: 100px;
+    gap: 75px;
+}
+
+.mSearchAndProfile{
+    padding-left: 250px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 75px;
 }
 
 .profilePic{
@@ -41,9 +48,19 @@ a{
     color: #000000;
 }
 
+.mNavSleep:hover{
+    border-bottom: 2px solid #000000;
+    font-weight:bold;
+}
+
 .mNavMood{
     font-size: 21px;
     color: #000000;
+}
+
+.mNavMood:hover{
+    border-bottom: 2px solid #000000;
+    font-weight:bold;
 }
 
 .mNavMeditation{
@@ -53,9 +70,20 @@ a{
     color: #000000;
 }
 
+
+.mNavMeditation:hover{
+    border-bottom: 2px solid #000000;
+    font-weight:bold;
+}
+
 .mNavResource{
     font-size: 21px;
     color: #000000;
+}
+
+.mNavResource:hover{
+    border-bottom: 2px solid #000000;
+    font-weight:bold;
 }
 
 .searchIcon{
@@ -63,6 +91,7 @@ a{
     height: 60px;
     object-fit: cover;
 }
+
 /*Nav Bar End*/
 
 /*Section 1*/
@@ -361,7 +390,8 @@ a{
     height: 250px;
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: center;
+    gap: 540px;
 }
 
 .mFooter1{
@@ -429,7 +459,7 @@ a {
     text-decoration: none;
 }
 
-.mNav {
+.iNav {
     height: 100px;
     display: flex;
     flex-direction: row;
@@ -445,26 +475,26 @@ a {
     border-radius: 60px;
 }
 
-.mNavBrand {
+.iNavBrand {
     font-size: 28px;
     color: #000000;
     font-weight: 700;
 }
 
-.mNavSleep {
+.iNavSleep {
     font-size: 21px;
     color: #000000;
 }
-.mNavSleep:hover{
+.iNavSleep:hover{
     border-bottom: 2px solid #000000;
     font-weight:bold;
 }
 
-.mNavMood {
+.iNavMood {
     font-size: 21px;
     color: #000000;
 }
-.mNavMood:hover{
+.iNavMood:hover{
     border-bottom: 2px solid #000000;
     font-weight:bold;
 }
@@ -478,11 +508,11 @@ a {
     font-weight:bold;
 }
 
-.mNavResource {
+.iNavResource {
     font-size: 21px;
     color: #000000;
 }
-.mNavResource:hover{
+.iNavResource:hover{
     border-bottom: 2px solid #000000;
     font-weight:bold;
 }
@@ -512,10 +542,6 @@ a:hover .searchField {
     text-align: center;
 
 }
-
-
-
-
 
 
 /*Nav Bar End*/
@@ -955,7 +981,7 @@ a:hover .searchField {
 /*Footer*/
 .lFooter {
     background-color: #d2ecff;
-    height: 369px;
+    height: 250px;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
@@ -973,7 +999,7 @@ a:hover .searchField {
 }
 
 .lFooterSectionTitle {
-    font-size: 24pt;
+    font-size: 24px;
     padding-bottom: 5px;
     font-weight: 600;
     color: #000000;
