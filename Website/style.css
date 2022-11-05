@@ -421,7 +421,7 @@ a{
 .lanBody, .lanhtml {
     height: 100%;
     margin: 0px;
-    background-color: #89BAD9;
+    background-color: #ffffff;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
@@ -435,6 +435,7 @@ a {
     flex-direction: row;
     justify-content: space-evenly;
     align-items: center;
+    background-color: #d2ecff;
 }
 
 .profilePic2 {
@@ -454,20 +455,36 @@ a {
     font-size: 21px;
     color: #000000;
 }
+.mNavSleep:hover{
+    border-bottom: 2px solid #000000;
+    font-weight:bold;
+}
 
 .mNavMood {
     font-size: 21px;
     color: #000000;
+}
+.mNavMood:hover{
+    border-bottom: 2px solid #000000;
+    font-weight:bold;
 }
 
 .iNavMeditation {
     font-size: 21px;
     color: #000000;
 }
+.iNavMeditation:hover{
+    border-bottom: 2px solid #000000;
+    font-weight:bold;
+}
 
 .mNavResource {
     font-size: 21px;
     color: #000000;
+}
+.mNavResource:hover{
+    border-bottom: 2px solid #000000;
+    font-weight:bold;
 }
 
 .searchIcon1 {
@@ -475,6 +492,31 @@ a {
     height: 60px;
     object-fit: cover;
 }
+span.searchField {
+    position: absolute;
+    display: none; 
+    width: auto;
+    top: 4%;
+    right: 15%; 
+    color: #F9F4F2;
+    padding: 5px;
+}
+
+input#searchBar{
+    font-size: 20px;
+    border-radius: 10px;
+}
+
+a:hover .searchField {
+    display: block; 
+    text-align: center;
+
+}
+
+
+
+
+
 
 /*Nav Bar End*/
 
@@ -491,7 +533,7 @@ a {
 
 .section1Header {
     position: absolute;
-    top: 400px;
+    top: 200px;
     left: 15%;
     font-size: 24px;
     color: #000000;
@@ -508,8 +550,13 @@ a {
     background-color:#F9F4F2;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
+.join:hover{
+    cursor: pointer;
+    color:  #1278c1;
+}
 
 .morningRoutine {
+    margin-top: 20px;
     color: rgba(0, 0, 0, 1);
     text-align: center;
     height: 350px;
@@ -517,6 +564,7 @@ a {
 }
 
 .morning {
+    margin-top: 20px;
     height: 280px;
     display: flex;
     text-align: left;
@@ -536,6 +584,8 @@ a {
     background-color: #e0dbd9;
     border-top-right-radius: 40px;
     border-bottom-right-radius: 40px;
+   
+    
 }
 
 .p1 {
@@ -551,6 +601,7 @@ a {
 }
 
 .afternoon {
+    margin-top: 20px;
     height: 280px;
     display: flex;
     text-align: left;
@@ -589,9 +640,42 @@ a {
     align-items: center;
     height: 350px;
     font-size: 24px;
+    
+}
+.linkNight{
+    text-decoration: none;
+    color: #000000;
+    
+    
+}
+.morningLink{
+    text-decoration: none;
+    color: #000000;
+}
+.afternoonlink{
+    text-decoration: none;
+    color: #000000;
+}
+.linkNight:hover{
+    cursor: pointer;
+    color: #1278c1;
+
+}
+.afternoonlink:hover{
+    cursor: pointer;
+    color: #1278c1;
+
+}
+.morningLink:hover{
+    cursor: pointer;
+    color: #1278c1;
 }
 
+
+
+
 .night {
+    margin-top: 20px;
     height: 280px;
     display: flex;
     text-align: left;
@@ -698,14 +782,24 @@ a {
     align-items: center;
     display: flex;
 }
+
 .name-text{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: x-large;
 }
 
+.topImages {
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    justify-content: center;
+    margin-left: 30px;
+}
+
 .section4{
     display: flex;
     flex-direction: column;
+    
 }
 
 .container1{
@@ -738,27 +832,32 @@ a {
     flex-direction: column;
 }
 
-.mountain{
+.mountains1{
     border-radius: 25px;
     transition: 300ms;
-    display: block;
+    display:block;
     width: 620px;
     height: 446px;
+    
+
 }
 
-.mountain:hover{
-    cursor: pointer;
+
+
+
+.mountains1:hover{
     box-shadow: 10px 10px 30px black;
     transition: 300ms;
 }
 
 .hike{
-    width: 620px;
+    width: 640px;
     height: 446px;
-    display: block;
+    display:block;
     border-radius: 25px;
     transition: 300ms;
     object-fit: cover;
+    
 }
 
 .hike:hover{
@@ -770,8 +869,9 @@ a {
 .bottom-pics{
     display: flex;
     flex-direction: row;
-    gap: 50px;
+    gap: 30px;
     justify-content: center;
+    margin-right: 25px;
 }
 
 .roadtrip{
@@ -839,6 +939,7 @@ a {
     font-size: 24px;
     color: #000000;
 }
+
 .labeltwo{
     font-size: 24px;
     color: #000000;
@@ -853,7 +954,7 @@ a {
 
 /*Footer*/
 .lFooter {
-    background-color: #032340;
+    background-color: #d2ecff;
     height: 369px;
     display: flex;
     flex-direction: row;
@@ -868,27 +969,27 @@ a {
 
 .lFooterListItem {
     font-size: 18px;
-    color: #F9F4F2;
+    color: #000000;
 }
 
 .lFooterSectionTitle {
     font-size: 24pt;
     padding-bottom: 5px;
     font-weight: 600;
-    color: #F9F4F2;
+    color: #000000;
 }
 
 .lFooter1Header {
     margin: 0;
     padding-bottom: 10px;
-    color: #F9F4F2;
+    color: #000000;
     font-size: 38px;
 }
 
 .lFooter1Description {
     margin: 0;
     font-size: 18px;
-    color: #F9F4F2;
+    color: #000000;
 }
 
 .lFooter2 {
