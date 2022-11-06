@@ -1,5 +1,5 @@
 /*Meditation Page*/
-body , html {
+.mbody, .mhtml {
     height: 100%;
     margin: 0px;
     background-color: #ffffff;
@@ -116,6 +116,7 @@ a{
     font-size: 70px;
     color: #000000;
     margin: 0;
+    font-weight: 500;
 }
 
 .mSection1In{
@@ -142,11 +143,6 @@ a{
     padding-top: 50px;
 }
 
-.mSloganWIcon{
-    display: flex;
-    flex-direction: row;
-    gap: 30px;
-}
 
 .mSection1Bottom{
     display: flex;
@@ -463,9 +459,18 @@ a {
     height: 100px;
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
+    justify-content: center;
     align-items: center;
-    background-color: #d2ecff;
+    background-color: #D2ECFF;
+    gap: 75px;
+}
+
+.iSearchAndProfile{
+    padding-left: 250px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 75px;
 }
 
 .profilePic2 {
@@ -587,6 +592,7 @@ a:hover .searchField {
     text-align: center;
     height: 350px;
     font-size: 24px;
+    padding-top: 140px;
 }
 
 .morning {
@@ -624,6 +630,7 @@ a:hover .searchField {
     align-items: center;
     height: 350px;
     font-size: 24px;
+    padding-top: 30px;
 }
 
 .afternoon {
@@ -666,8 +673,9 @@ a:hover .searchField {
     align-items: center;
     height: 350px;
     font-size: 24px;
-    
+    padding-top: 30px;
 }
+
 .linkNight{
     text-decoration: none;
     color: #000000;
@@ -761,6 +769,8 @@ a:hover .searchField {
   font-size: 34px;
   opacity: 1;
   text-align: center;
+  padding-top: 90px;
+  padding-bottom: 30px;
 }
 
 .road{
@@ -807,6 +817,8 @@ a:hover .searchField {
     justify-content: center;
     align-items: center;
     display: flex;
+    padding-bottom: 30px;
+    padding-top: 120px;
 }
 
 .name-text{
@@ -898,6 +910,7 @@ a:hover .searchField {
     gap: 30px;
     justify-content: center;
     margin-right: 25px;
+    padding-bottom: 120px;
 }
 
 .roadtrip{
@@ -980,11 +993,12 @@ a:hover .searchField {
 
 /*Footer*/
 .lFooter {
-    background-color: #d2ecff;
+    background-color: #D2ECFF;
     height: 250px;
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: center;
+    gap: 540px;
 }
 
 .lFooter1 {
@@ -1032,7 +1046,7 @@ a:hover .searchField {
     display: flex;
     flex-direction: column;
     gap: 10px;
-    color: #F9F4F2;
+    color: #000000;
 }
 
 
