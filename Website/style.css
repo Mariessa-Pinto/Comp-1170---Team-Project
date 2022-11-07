@@ -1493,9 +1493,9 @@ a:hover .searchField {
 .moodBody , .moodHTML {
     height: 100%;
     margin: 0px;
-    background-color: #c1c7de;
+    background-color: #ffffff;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-
+    font-weight: lighter;
 }
 
 
@@ -1506,6 +1506,7 @@ a:hover .searchField {
     justify-content: space-evenly;
     align-items: center;
     text-decoration: none;
+    background: #D2ECFF;
 }
 
 .moodNavMeditation{
@@ -1542,54 +1543,40 @@ a:hover .searchField {
 }
 
 .moodSection1{
-    height: 500px; 
-    background-color: #7E8391;
-    color: #F9F4F2;
-    padding-left: 100px;
-    padding-top: 100px;
+    display: flex;
+    flex-direction: column;
+    height: 592px; 
+    background-color: #F9F4F2;
+    color: #191919;
+    padding-left: 320px;
+    padding-top: 84px;
 }
 
 .moodSection1 h3{
     font-size: 24px;
+    font-weight: lighter;
 }
 
-h1.moodAnimationSlogan{
+h1.moodAnimationInstruct{
     font-size: 70px;
-}
-
-.moodSpeakerImg{
-    height: 50px;
-    padding-left: 10px;
-}
-
-.moodSpeakerImg:hover{
-    cursor: pointer;
-}
-
-.moodAnimation{
-    height: 50%;
-    width: 100%;
-    background-color: #7E8391;
+    font-weight: lighter;
+    margin: 2px 0px 0px 0px;
 }
 
 .moodAnimationSlogan::before{
     position: absolute;
+    justify-content: center;
+    margin-top: 98px;
     width: 70%;
-    left: 15%;
-    top: 50%;
     content: '';
-    animation: animate infinite 50s;
-    font-size: 60px;
-    font-weight: 800;
+    animation: moodAnimate infinite 50s;
+    font-size: 100px;
     text-align: center;
-    color: #F9F4F2;
-    font-weight: bolder;
-    -webkit-text-stroke-color: black;
-    -webkit-text-stroke-width: 2px;
-
+    color: #191919;
+    font-weight: lighter;
 }
 
-@keyframes animate{
+@keyframes moodAnimate{
     0%{
         content:'I am Enough.';
     }
@@ -1603,18 +1590,18 @@ h1.moodAnimationSlogan{
         content:'I am capable.';
     }
     100%{
-        content:'I can face my challenges. ';
+        content:'I can face my challenges.';
     }
 }
 
 /*Timer bar works but I can't get it to sync properly with the words. Removed for now :(*/
 /*.timerBar{
     position: relative;
-    width: 50%;
+    width: 50%; 
     height: 2%;
-    top: 65%;
-    left: 25%;
-    background: #F9F4F2;
+    left: 250px;
+    top: 125px;
+    background: black;
     border-radius: 5px;
     animation: countDown infinite 10s;
 }
@@ -1625,6 +1612,16 @@ h1.moodAnimationSlogan{
     }
 }*/
 
+.moodExercises{
+    display: flex;
+    flex-direction: column;
+    padding-top: 171px;
+}
+
+h3.h3Spacing{
+    padding-top: 120px;
+}
+
 .moodQuestionImg{
     height: 20px;
     padding-left: 5px;
@@ -1632,7 +1629,7 @@ h1.moodAnimationSlogan{
 
 .moodExercises h3, .moodExercises p{
     position: relative;
-    left: 19%;
+    left: 320px;
     font-size: 30px;
 }
 
@@ -1643,69 +1640,239 @@ h1.moodAnimationSlogan{
 a .questionInfo {
     position: absolute;
     display: none; 
-    left: 15%; 
-    color: #F9F4F2; 
-    background: #3D3F46; 
+    color: #191919; 
+    background: #00B295;
     padding: 5px;
     border-radius: 10px;
     font-size: 20px;
 }
 
 a:hover .questionInfo {
-    display: block; 
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 800px;
     text-align: center;
 }
-
+/*Mood Activities (Activities)*/
 .activityText{
-    display: flex;
-    justify-content: center;
-    padding-bottom: 5%;
+    display: grid;
+    grid-template: 
+    "a b" 76px
+    "c d" 76px
+    "e e" 95px
+        ;
+    padding: 30px 376px;
+    gap: 20px;
 }
 
-.activityTextCol1, .activityTextCol2{
-    width: 33%;
-    height: 15%;
+@media only screen and (max-width:600px){
+    .activityText{
+    grid-template:
+    "a a" 76px
+    "b b" 76px
+    "c c" 76px
+    "d d" 76px
+    "e e" 95px
+    ;
+    padding: 30px 19%;
+    }
 }
 
-.activityText input, .moodSaveExc, .moodSaveGoal, .moodSaveJou{
-    width: 90%;
-    border-radius: 20px;
+#activity1{
+    grid-area: a;
+    background: #EFEFEF;
+}
+
+#activity2{
+    grid-area: b;
+    background: #EFEFEF;
+}
+
+#activity3{
+    grid-area: c;
+    background: #EFEFEF;
+}
+
+#activity4{
+    grid-area: d;
+    background: #EFEFEF;
+}
+
+.moodSaveExc{
+    grid-area: e;
+}
+
+.activityText input, .activityTextMind input{
+    padding-left: 46.64px;
+    padding-top: 22px;
+    padding-bottom: 25px;
+    border-radius: 30px;
     border: 1px solid #444444;
     font-size: 24px;
-    margin: 3% 0 3% 5%;
-    padding: 1% 4%;
 }
 
-.moodButtons:hover{
-    background-color: #444444;
-    cursor: pointer;
+/*Mood Mindfulness Activity*/
+.activityTextMind{
+    display: grid;
+    grid-template: 
+    "f g" 76px
+    "h i" 76px
+    "j j" 76px
+    "k k" 95px
+    ;
+    padding: 30px 376px;
+    gap: 20px;
 }
 
-.moodSaveExc, .moodSaveGoal, .moodSaveJou, .moodSaveGfn{
-    background: #42113C;
-    color: #F9F4F2;
-    width: 98%;
+@media only screen and (max-width:600px){
+    .activityText{
+    grid-template:
+    "f f" 76px
+    "g g" 76px
+    "h h" 76px
+    "i i" 76px
+    "j j" 76px
+    "k k" 95px
+    ;
+    padding: 30px 19%;
+    }
+}
+
+#moodSight{
+    grid-area: f;
+    background: #EFEFEF;
+}
+
+#moodSmell{
+    grid-area: g;
+    background: #EFEFEF;
+}
+
+#moodTouch{
+    grid-area: h;
+    background: #EFEFEF;
+}
+
+#moodTaste{
+    grid-area: i;
+    background: #EFEFEF;
+}
+
+#moodHearing{
+    grid-area: j;
+    background: #EFEFEF;
+    width: 356px;
+}
+
+.moodSaveJou{
+    grid-area: k;
+}
+
+
+/*Mood Goal Setting Activity*/
+.activityTextGoal{
+    display: grid;
+    grid-template: 
+    "l m" 70px
+    "n o" 70px
+    "p q" 70px
+    "r r" 70px
+    "s s" 70px
+    ;
+    padding: 30px 376px;
+    gap: 20px;
+}
+
+@media only screen and (max-width:600px){
+.activityText{
+    grid-template:
+    "l l" 70px
+    "m m" 70px
+    "n n" 70px
+    "o o" 70px
+    "p p" 70px
+    "q q" 70px
+    "r r" 70px
+    "s s" 70px
+    ;
+    padding: 30px 19%;
+    }
+}
+
+.moodGoals{
+    font-size: 24px;
+    border-radius: 20px;
+}
+
+.moodGoalBed{
+    grid-area: l;
+    background-image: url("MoodGoalBed.jpg") ;
+    background-position-x: -25%;
+    background-position-y: 77%;
+    background-size: 300px 200px; 
+    background-repeat: no-repeat;
+}
+
+.moodGoalGroc{
+    grid-area: m;
+    background-image: url("MoodGoalGrocery.jpg") ;
+    background-position-x: -25%;
+    background-position-y: 60%;
+    background-size: 300px 200px; 
+    background-repeat: no-repeat;
+}
+
+.moodGoalEat{
+    grid-area: n;
+    background-image: url("MoodGoalApple.jpg") ;
+    background-position-x: -25%;
+    background-position-y: 50%;
+    background-size: 300px 200px; 
+    background-repeat: no-repeat;
+}
+
+.moodGoalLaund{
+    grid-area: o;
+    background-image: url("MoodGoalLaund.jpg") ;
+    background-position-x: -10%;
+    background-position-y: 77%;
+    background-size: 300px 200px; 
+    background-repeat: no-repeat;
+}
+
+.moodGoalWalk{
+    grid-area: p;
+    background-image: url("MoodGoalForest.jpg") ;
+    background-position-x: -25%;
+    background-position-y: 85%;
+    background-size: 300px 200px; 
+    background-repeat: no-repeat;
+}
+
+.moodGoalOwn{
+    grid-area: q;
+    background-image: url("MoodGoalFlower.jpg") ;
+    background-position-x: -10%;
+    background-position-y: 55%;
+    background-size: 300px 200px; 
+    background-repeat: no-repeat;
+}
+
+.moodGoalTalk{
+    grid-area: r;
+    background-image: url("MoodGoalTalk.jpg") ;
+    background-position-x: -10%;
+    background-position-y: 55%;
+    background-size: 300px 200px; 
+    background-repeat: no-repeat;
 }
 
 .moodSaveGoal{
-    margin: 2.5% 0 3% 5%;
+    grid-area: s;
+    height: 90px;
 }
 
-.moodGoals {
-    display: block;
-    position: relative;
-    cursor: pointer;
-    font-size: 24px;
-    background-color: transparent;
-    border-radius: 20px;
-    margin: 6% -3% 6% 5%;
-    padding: 1% 0 1% 15%;
-    color: #F9F4F2;
-    font-weight: bold;
-    -webkit-text-stroke-color: black;
-    -webkit-text-stroke-width: 1px;
-  }
-  
+/*The original checkbubble hidden*/  
 .moodGoals input {
     position: absolute;
     opacity: 0;
@@ -1713,114 +1880,86 @@ a:hover .questionInfo {
     width: 0;
   }
   
+/*New check bubble*/  
 .checkbubble {
     position: absolute;
-    top: 10%;
-    left: 2%;
-    height: 75%;
-    width: 6%;
+    text-align: center;
+    margin-left: 182px;
+    height: 70px;
+    width: 225px;
     background-color: #F9F4F2;
-    border: 1px solid #f9f3f2;
-    border: 1px solid 000000;
     border-radius: 20px;
   }
   
   /*The squiggly line = select all the .checkbubble classes within "input"*/
 .moodGoals:hover input ~ .checkbubble {
     background-color: #C1C7DE;
+    cursor: pointer;
   }
 .moodGoals input:checked ~ .checkbubble {
     background-color: #3D3F46;
-    border: 1px solid #f9f3f2;
+    color: #F9F4F2;
   }
 
-.goalImgs{
-    position: absolute;
-    height: 100%;
-    width: 100%;
-    object-fit: cover;
-    top: 0px;
-    left: 0px;
-    border-radius: 20px;
-    border: 1px solid #f9f3f2;
-    z-index: -1;
+/*Mood Gratefulness Activity*/
+
+.activityTextGrateful{
+    display: grid;
+    grid-template: 
+    "t t" 158px
+    "u u" 95px
+    ;
+    padding: 30px 376px;
+    gap: 20px;
 }
 
-.moodImgBed{
-    object-position: 25% 77%;
-}
-
-.moodImgApple{
-    object-position: 0% 40%;
-}
-
-.moodImgForest{
-    object-position: 0% 83%;
-}
-
-.moodImgTalk{
-    object-position: 0% 40%;
-}
-
-.moodImgGroc{
-    object-position: 0% 50%;
-}
-
-.moodImgLaund{
-    object-position: 0% 88%;
-}
-
-.moodImgFriend{
-    object-position: 0% 65%;
-}
-
-input.moodFriend{
-    background: url('MoodGoalFlower.jpg');
-    background-size: cover;
-    background-position: 0% 62%;
-    padding-left:20px;
-    color: #f9f3f2;
-    font-weight: bold;
-    -webkit-text-stroke-color: #444444;
-    -webkit-text-stroke-width: 1px;
-}
-
-input.moodFriend::-moz-placeholder{
-    opacity: 1;
-    color: #f9f3f2;
-    font-weight: bold;
-    -webkit-text-stroke-color: #444444;
-    -webkit-text-stroke-width: 1px;
+@media only screen and (max-width:600px){
+    .activityTextGrateful{
+    grid-template:
+    "t t" 100px
+    "u u" 95px
+    ;
+    padding: 30px 19%;
+    }
 }
 
 #moodJournal{
-    position: relative;
-    width: 66%;
-    left: 19%;
+    grid-area: t;
     border-radius: 20px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 24px;
-    margin: 1%;
     padding: 1%;
 }
 
 .moodSaveGfn{
-    position: relative;
-    left: 14%;
-    width: 67%;
-    border-radius: 20px;
-    border: 1px solid #444444;
-    font-size: 24px;
-    margin: 3% 0 3% 5%;
-    padding: 1% 2%;
+    grid-area: u;
+    margin-bottom: 69px;
 }
 
+
+/*Mood Buttons*/
+.moodButtons{
+    background: #42113C;
+    color: #F9F4F2;
+    font-size: 24px;
+    border-radius: 30px;
+    margin: 0px 300px;
+    border: 1px solid #444444;
+}
+
+.moodButtons:hover{
+    background-color: #444444;
+    cursor: pointer;
+}
+
+/*Mood Footer*/
 .moodFooter{
-    background-color: #3D3F46;
-    height: 369px;
+    background-color: #D2ECFF;
+    height: 250px;
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: center;
+    gap: 540px;
 }
 
 .moodFooter1{
@@ -1831,31 +1970,27 @@ input.moodFriend::-moz-placeholder{
 
 .moodFooterListItem{
     font-size: 18px;
-    color: #F9F4F2;
+    color: #000000;
 }
 
 .moodFooterSectionTitle{
-    font-size: 24pt;
+    font-size: 24px;
     padding-bottom: 5px;
     font-weight: 600;
-    color: #F9F4F2;
+    color: #000000;
 }
 
 .moodFooter1Header {
     margin: 0;
     padding-bottom: 10px;
-    color: #F9F4F2;
+    color: #000000;
     font-size: 38px;
-}
-
-.moodFooter1Header{
-    cursor: pointer;
 }
 
 .moodFooter1Description {
     margin: 0;
     font-size: 18px;
-    color: #F9F4F2;
+    color: #000000;
 }
 
 .moodFooter2{
@@ -1872,13 +2007,8 @@ input.moodFriend::-moz-placeholder{
     display: flex;
     flex-direction: column;
     gap: 10px;
-    color: #F9F4F2;
+    color: #000000;
 }
-
-.moodFooter2List:hover{
-    cursor: pointer;
-}
-
 
 /*Resource Page*/
 
