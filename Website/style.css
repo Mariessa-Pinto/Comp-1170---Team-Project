@@ -1583,6 +1583,14 @@ a:hover .searchField {
     padding-top: 84px;
 }
 
+@media only screen and (max-width:950px){
+    .moodSection1{
+    padding: 30px 50px;
+    height: 800px;
+    }
+}
+
+
 .moodSection1 h3{
     font-size: 24px;
     font-weight: lighter;
@@ -1664,6 +1672,13 @@ h3.h3Spacing{
     font-size: 30px;
 }
 
+@media only screen and (max-width:950px){
+    .moodExercises h3, .moodExercises p{
+    padding: 30px 30px;
+    left: 30px;
+    }
+}
+
 .moodQicon{
     height: 25px;
 }
@@ -1684,6 +1699,12 @@ a:hover .questionInfo {
     max-width: 800px;
     text-align: center;
 }
+
+@media only screen and (max-width:950px){
+    a:hover .questionInfo{
+    max-width: 250px;
+    }
+}
 /*Mood Activities (Activities)*/
 .activityText{
     display: grid;
@@ -1696,7 +1717,7 @@ a:hover .questionInfo {
     gap: 20px;
 }
 
-@media only screen and (max-width:600px){
+@media only screen and (max-width:950px){
     .activityText{
     grid-template:
     "a a" 76px
@@ -1705,28 +1726,32 @@ a:hover .questionInfo {
     "d d" 76px
     "e e" 95px
     ;
-    padding: 30px 19%;
+    padding: 30px 50px;
     }
 }
 
 #activity1{
     grid-area: a;
     background: #EFEFEF;
+
 }
 
 #activity2{
     grid-area: b;
     background: #EFEFEF;
+
 }
 
 #activity3{
     grid-area: c;
     background: #EFEFEF;
+
 }
 
 #activity4{
     grid-area: d;
     background: #EFEFEF;
+
 }
 
 .moodSaveExc{
@@ -1748,15 +1773,15 @@ a:hover .questionInfo {
     grid-template: 
     "f g" 76px
     "h i" 76px
-    "j j" 76px
+    "j ." 76px
     "k k" 95px
     ;
     padding: 30px 376px;
     gap: 20px;
 }
 
-@media only screen and (max-width:600px){
-    .activityText{
+@media only screen and (max-width:950px){
+    .activityTextMind{
     grid-template:
     "f f" 76px
     "g g" 76px
@@ -1765,34 +1790,37 @@ a:hover .questionInfo {
     "j j" 76px
     "k k" 95px
     ;
-    padding: 30px 19%;
+    padding: 30px 50px
     }
 }
 
 #moodSight{
     grid-area: f;
     background: #EFEFEF;
+
 }
 
 #moodSmell{
     grid-area: g;
     background: #EFEFEF;
+
 }
 
 #moodTouch{
     grid-area: h;
     background: #EFEFEF;
+
 }
 
 #moodTaste{
     grid-area: i;
     background: #EFEFEF;
+
 }
 
 #moodHearing{
     grid-area: j;
     background: #EFEFEF;
-    width: 356px;
 }
 
 .moodSaveJou{
@@ -1807,15 +1835,15 @@ a:hover .questionInfo {
     "l m" 70px
     "n o" 70px
     "p q" 70px
-    "r r" 70px
+    "r ." 70px
     "s s" 70px
     ;
     padding: 30px 376px;
     gap: 20px;
 }
 
-@media only screen and (max-width:600px){
-.activityText{
+@media only screen and (max-width:950px){
+.activityTextGoal{
     grid-template:
     "l l" 70px
     "m m" 70px
@@ -1826,7 +1854,7 @@ a:hover .questionInfo {
     "r r" 70px
     "s s" 70px
     ;
-    padding: 30px 19%;
+    padding: 30px 50px;
     }
 }
 
@@ -1944,13 +1972,13 @@ a:hover .questionInfo {
     gap: 20px;
 }
 
-@media only screen and (max-width:600px){
+@media only screen and (max-width:950px){
     .activityTextGrateful{
     grid-template:
     "t t" 100px
     "u u" 95px
     ;
-    padding: 30px 19%;
+    padding: 30px 50px;
     }
 }
 
@@ -1976,6 +2004,13 @@ a:hover .questionInfo {
     border-radius: 30px;
     margin: 0px 300px;
     border: 1px solid #444444;
+    min-width: 200px;
+}
+
+@media only screen and (max-width:950px){
+    .moodButtons{
+    margin: 0px 250px;
+    }
 }
 
 .moodButtons:hover{
@@ -1991,6 +2026,14 @@ a:hover .questionInfo {
     flex-direction: row;
     justify-content: center;
     gap: 540px;
+}
+
+@media only screen and (max-width:950px){
+    .moodFooter{
+    flex-direction: column;
+    gap: 50px;
+    padding: 30px 50px;
+    }
 }
 
 .moodFooter1{
