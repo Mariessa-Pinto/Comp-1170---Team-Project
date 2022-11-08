@@ -1077,14 +1077,24 @@ a:hover .searchField {
 }
 
 .sleepNav{
-    height:100px;
-    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    height: 100px;
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content: space-evenly;
     align-items: center;
-    background-color: #D2ECFF;
-    gap: 75px;
+    text-decoration: none;
+    background: #D2ECFF;
+}
+
+@media only screen and (max-width:950px){
+    .sleepNav {
+    height:80px;
+    flex-direction:row;
+    justify-content:center;
+    align-items:space-evenly;
+    padding-left:auto;
+    padding-right:auto;
+    }
 }
 
 .sleepNavSleep{
@@ -1092,6 +1102,14 @@ a:hover .searchField {
     font-weight: 700;
     text-decoration: underline;
     color: #000000;
+}
+
+@media only screen and (max-width:950px){
+    .sleepNavSleep {
+    padding-left:auto;
+    padding-right:auto;
+    font-size:16px;
+    }
 }
 
 .sleepNavSleep:hover{
@@ -1103,6 +1121,14 @@ a:hover .searchField {
     font-size: 21px;
     color: #000000;
     text-decoration: none;
+}
+
+@media only screen and (max-width:950px){
+    .sleepNavMed {
+    margin-left:10px;
+    padding-right:auto;
+    font-size:16px;
+    }
 }
 
 .sleepNavMed:hover{
@@ -1120,6 +1146,14 @@ a:hover .searchField {
     text-decoration: none;
 }
 
+@media only screen and (max-width:950px){
+    .sleepNavMood {
+    margin-left:10px;
+    margin-right:10px;
+    font-size:16px;
+    }
+}
+
 .sleepNavMood:hover{
     border-bottom: 2px solid #000000;
     font-weight:bold;
@@ -1135,6 +1169,14 @@ a:hover .searchField {
     text-decoration: none; 
 }
 
+@media only screen and (max-width:950px){
+    .sleepNavRes {
+    padding-left:auto;
+    padding-right:auto;
+    font-size:16px;
+    }
+}
+
 .sleepNavRes:hover{
     border-bottom: 2px solid #000000;
     font-weight:bold;
@@ -1145,11 +1187,21 @@ a:hover .searchField {
 }
 
 .sleepSearchIcon {
-    width: 60px;
-    height: 60px;
-    object-fit: cover;
+    width:60px;
+    height:60px;
+    object-fit:cover;
 }
 
+@media only screen and (max-width:950px){
+    .sleepSearchIcon {
+    width:30px;
+    height:30px;
+    object-fit:cover;
+    border-radius:60px;
+    padding-left:10px;
+    padding-right:10px;
+    }
+}
 .sleepProfilePic{
     width: 80px;
     height: 80px;
@@ -1157,10 +1209,29 @@ a:hover .searchField {
     border-radius: 60px;
 }
 
+@media only screen and (max-width:950px){
+    .sleepProfilePic {
+    width:30px;
+    height:30px;
+    object-fit:cover;
+    border-radius:60px;
+    padding-left:auto;
+    padding-right:auto;
+    }
+}
+
 .sleepNavBrand {
     font-size: 28px;
     color: #000000;
     font-weight: 700;
+}
+
+@media only screen and (max-width:950px){
+    .sleepNavBrand {
+    padding-left:auto;
+    padding-right:10px;
+    font-size:20px;
+    }
 }
 
 .sleepTopColumn {
@@ -1180,6 +1251,12 @@ a:hover .searchField {
     font-size:small;
 }
 
+@media only screen and (max-width:950px){
+    .sleepBottomColumn {
+    height:5600px;
+    }
+}
+
 .sleepHeaderText {
     padding-top:30px;
     margin:0;
@@ -1188,12 +1265,24 @@ a:hover .searchField {
     font-size:24px;
 }
 
+@media only screen and (max-width:950px){
+    .sleepHeaderText {
+    font-size:20px;
+    }
+}
+
 .sleepHeaderTitle {
     padding-left:9%;
     margin-top:0;
     margin-bottom:0;
     font-size:70px;
     font-weight:lighter;
+}
+
+@media only screen and (max-width:950px){
+    .sleepHeaderTitle {
+    font-size:40px;
+    }
 }
 
 .sleepHeaderPic{
@@ -1214,6 +1303,12 @@ a:hover .searchField {
     font-size: 34px;
 }
 
+@media only screen and (max-width:950px){
+    .sleepHeaderPicDesc {
+    font-size:28px;
+    }
+}
+
 .sleepPicks{
     padding-top:70px;
     padding-left:10px;
@@ -1225,6 +1320,14 @@ a:hover .searchField {
     padding-left: 4%;
 }
 
+@media only screen and (max-width:950px){
+    .sleepPicksHeader {
+    font-size:28px;
+    padding-left:auto;
+    padding-right:auto;
+    }
+}
+
 .sleepPicksDesc{
     padding-left:20%;
     font-family:Verdana, Geneva, Tahoma, sans-serif;
@@ -1234,6 +1337,14 @@ a:hover .searchField {
 .sleepImagesAll {
     display:flex; 
     justify-content:center;
+}
+
+@media only screen and (max-width:950px){
+    .sleepImagesAll {
+    flex-direction:column;
+    padding-left:auto;
+    padding-right:auto;
+    }
 }
 
 .sleepPicksImage1 img{
@@ -1256,6 +1367,14 @@ a:hover .searchField {
     font-size:22px;
 }
 
+@media only screen and (max-width:950px){
+    .sleepPicksImage1 p{
+    font-size:18px;
+    padding-left:auto;
+    padding-right:auto;
+    }
+}
+
 .sleepPicksImage2 img{
     object-fit:cover;
     width:400px;
@@ -1275,6 +1394,15 @@ a:hover .searchField {
     padding-right:40px;
     font-size:22px;
 }
+
+@media only screen and (max-width:950px){
+    .sleepPicksImage2 p{
+    font-size:18px;
+    padding-left:auto;
+    padding-right:auto;
+    }
+}
+
 
 .sleepPicksImage3 img{
     object-fit:cover;
@@ -1296,15 +1424,39 @@ a:hover .searchField {
     font-size:22px;
 }
 
+@media only screen and (max-width:950px){
+    .sleepPicksImage3 p{
+    font-size:18px;
+    padding-left:auto;
+    padding-right:auto;
+    }
+}
+
 .sleepPopular {
     font-size:34px;
     padding-left:4%;
     padding-top:2%;
 }
 
+@media only screen and (max-width:950px){
+    .sleepPopular {
+    font-size:28px;
+    padding-left:auto;
+    padding-right:auto;
+    }
+}
+
 .sleepPopularImagesAll {
     display:flex; 
     justify-content:center;
+}
+
+@media only screen and (max-width:950px){
+    .sleepPopularImagesAll {
+    flex-direction:column;
+    padding-left:auto;
+    padding-right:auto;
+    }
 }
 
 .sleepPopularImage1 img{
@@ -1327,6 +1479,14 @@ a:hover .searchField {
     font-size:22px;
 }
 
+@media only screen and (max-width:950px){
+    .sleepPopularImage1 p{
+    font-size:18px;
+    padding-left:auto;
+    padding-right:auto;
+    }
+}
+
 .sleepPopularImage2 img{
     object-fit:cover;
     width:400px;
@@ -1345,6 +1505,14 @@ a:hover .searchField {
     width: 400px;
     padding-right:40px;
     font-size:22px;
+}
+
+@media only screen and (max-width:950px){
+    .sleepPopularImage2 p{
+    font-size:18px;
+    padding-left:auto;
+    padding-right:auto;
+    }
 }
 
 .sleepPopularImage3 img{
@@ -1367,10 +1535,26 @@ a:hover .searchField {
     font-size:22px;
 }
 
+@media only screen and (max-width:950px){
+    .sleepPopularImage3 p{
+    font-size:18px;
+    padding-left:auto;
+    padding-right:auto;
+    }
+}
+
 .sleepNew {
     font-size:34px;
     padding-top:5%;
     padding-left:4%;
+}
+
+@media only screen and (max-width:950px){
+    .sleepNew {
+    font-size:28px;
+    padding-left:auto;
+    padding-right:auto;
+    }
 }
 
 .sleepNewImageText1 {
@@ -1382,6 +1566,17 @@ a:hover .searchField {
     color:#ffffff;
 }
 
+@media only screen and (max-width:950px){
+    .sleepNewImageText1 {
+    font-size:25px;
+    z-index:10;
+    top:0;
+    position:absolute;
+    padding-left:auto;
+    padding-right:auto;
+    }
+}
+
 .sleepNewImageText2 {
     font-size:34px;
     font-weight:lighter;
@@ -1390,10 +1585,30 @@ a:hover .searchField {
     color:#ffffff;
 }
 
+@media only screen and (max-width:950px){
+    .sleepNewImageText2 {
+    font-size:25px;
+    z-index:10;
+    top:50%;
+    left:5%;
+    position:absolute;
+    padding-left:auto;
+    padding-right:auto;
+    }
+}
+
 .sleepNewImagesAll {
     display:flex; 
     justify-content:center;
     position:relative;
+}
+
+@media only screen and (max-width:950px){
+    .sleepNewImagesAll {
+    flex-direction:column;
+    padding-left:auto;
+    padding-right:auto;
+    }
 }
 
 .sleepNewImage1 img{
@@ -1401,6 +1616,13 @@ a:hover .searchField {
     width:620px;
     height:350px;
     border-radius:15px;
+}
+
+@media only screen and (max-width:950px){
+    .sleepNewImage1 img {
+    width:400px;
+    height:250px;
+    }
 }
 
 .sleepNewImage1 img:hover{
@@ -1416,11 +1638,27 @@ a:hover .searchField {
     font-size:22px;
 }
 
+@media only screen and (max-width:950px){
+    .sleepNewImage1 {
+    width:400px;
+    font-size:18px;
+    padding-left:auto;
+    padding-right:auto;
+    }
+}
+
 .sleepNewImage2 img{
     object-fit:cover;
     width:620px;
     height:350px;
     border-radius:15px;
+}
+
+@media only screen and (max-width:950px){
+    .sleepNewImage2 img {
+    width:400px;
+    height:250px;
+    }
 }
 
 .sleepNewImage2 img:hover{
@@ -1435,6 +1673,15 @@ a:hover .searchField {
     font-size:22px;
 }
 
+@media only screen and (max-width:950px){
+    .sleepNewImage2 {
+    width:400px;
+    font-size:18px;
+    padding-left:auto;
+    padding-right:auto;
+    }
+}
+
 .sleepRecents {
     justify-content: space-around;
     padding-top:5%;
@@ -1442,14 +1689,39 @@ a:hover .searchField {
     font-size:34px;
 }
 
+@media only screen and (max-width:950px){
+    .sleepRecents {
+    font-size:28px;
+    padding-left:auto;
+    padding-right:auto;
+    }
+}
+
 .sleepRecentImagesTop {
     display:flex; 
     justify-content:center;
 }
 
+@media only screen and (max-width:950px){
+    .sleepRecentImagesTop {
+    flex-direction:column;
+    padding-left:auto;
+    padding-right:auto;
+    }
+}
+
+
 .sleepRecentImagesBottom {
     display:flex; 
     justify-content:center;
+}
+
+@media only screen and (max-width:950px){
+    .sleepRecentImagesBottom {
+    flex-direction:column;
+    padding-left:auto;
+    padding-right:auto;
+    }
 }
 
 
@@ -1458,6 +1730,14 @@ a:hover .searchField {
     width:400px;
     margin:25px;
     font-size:22px;
+}
+
+@media only screen and (max-width:950px){
+    .sleepRecentImage1 {
+    font-size:18px;
+    padding-left:auto;
+    padding-right:auto;
+    }
 }
 
 .sleepRecentImage1 img {
@@ -1482,12 +1762,20 @@ a:hover .searchField {
     font-size:22px;
 }
 
+@media only screen and (max-width:950px){
+    .sleepRecentImage2 {
+    font-size:18px;
+    padding-left:auto;
+    padding-right:auto;
+    }
+}
+
 .sleepRecentImage2 img {
     object-fit:cover;
     flex-grow: 1;
     margin: 5px;
-    width:300px;
-    height:200px;
+    width:400px;
+    height:250px;
     border-radius:15px;
 }
 
@@ -1502,6 +1790,14 @@ a:hover .searchField {
     width:400px;
     margin:25px;
     font-size:22px;
+}
+
+@media only screen and (max-width:950px){
+    .sleepRecentImage3 {
+    font-size:18px;
+    padding-left:auto;
+    padding-right:auto;
+    }
 }
 
 .sleepRecentImage3 img {
@@ -1526,6 +1822,14 @@ a:hover .searchField {
     font-size:22px;
 }
 
+@media only screen and (max-width:950px){
+    .sleepRecentImage4 {
+    font-size:18px;
+    padding-left:auto;
+    padding-right:auto;
+    }
+}
+
 .sleepRecentImage4 img {
     object-fit:cover;
     flex-grow: 1;
@@ -1535,17 +1839,27 @@ a:hover .searchField {
     border-radius:15px;
 }
 
+
 .sleepRecentImage4 img:hover{
     cursor: pointer;
     box-shadow: 10px 10px 30px black;
     transition: 300ms;
 }
 
+
 .sleepRecentImage5{
     text-align:justify;
     width:400px;
     margin:25px;
     font-size:22px;
+}
+
+@media only screen and (max-width:950px){
+    .sleepRecentImage5 {
+    font-size:18px;
+    padding-left:auto;
+    padding-right:auto;
+    }
 }
 
 .sleepRecentImage5 img {
@@ -1556,6 +1870,7 @@ a:hover .searchField {
     height:250px;
     border-radius:15px;
 }
+
 
 .sleepRecentImage5 img:hover{
     cursor: pointer;
@@ -1568,6 +1883,14 @@ a:hover .searchField {
     width:400px;
     margin:25px;
     font-size:22px;
+}
+
+@media only screen and (max-width:950px){
+    .sleepRecentImage6 {
+    font-size:18px;
+    padding-left:auto;
+    padding-right:auto;
+    }
 }
 
 .sleepRecentImage6 img {
@@ -1585,7 +1908,6 @@ a:hover .searchField {
     transition: 300ms;
 }
 
-
 /*SLEEP FOOTER*/
 .sleepFooter{
     background-color: #D2ECFF;
@@ -1596,23 +1918,43 @@ a:hover .searchField {
     gap: 540px;
 }
 
-.sleepFooter1 {
+@media only screen and (max-width:950px){
+    .sleepFooter{
+    flex-direction: column;
+    gap: 50px;
+    padding: 30px 50px;
+    height:305px;
+    }
+}
+
+.sleepFooter1{
     display: flex;
     flex-direction: column;
     justify-content: center;
 }
 
-.sleepFooterListItem {
+.sleepFooterListItem{
     font-size: 18px;
     color: #000000;
-    text-decoration:none;
 }
 
-.sleepFooterSectionTitle {
+@media only screen and (max-width:950px){
+    .sleepFooterListItem{
+    font-size:16px;
+    }
+}
+
+.sleepFooterSectionTitle{
     font-size: 24px;
     padding-bottom: 5px;
     font-weight: 600;
     color: #000000;
+}
+
+@media only screen and (max-width:950px){
+    .sleepFooterSectionTitle{
+    font-size:17px;
+    }
 }
 
 .sleepFooter1Header {
@@ -1622,6 +1964,11 @@ a:hover .searchField {
     font-size: 38px;
 }
 
+@media only screen and (max-width:950px){
+    .sleepFooter1Header{
+    font-size:20px;
+    }
+}
 
 .sleepFooter1Description {
     margin: 0;
@@ -1629,7 +1976,13 @@ a:hover .searchField {
     color: #000000;
 }
 
-.sleepFooter2 {
+@media only screen and (max-width:950px){
+    .sleepFooter1Description{
+    font-size:16px;
+    }
+}
+
+.sleepFooter2{
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -1645,7 +1998,6 @@ a:hover .searchField {
     gap: 10px;
     color: #000000;
 }
-
 /*END SLEEP FOOTER*/
 
 /*Mood Page*/
