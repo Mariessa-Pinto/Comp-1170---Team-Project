@@ -553,24 +553,37 @@ a:hover .searchField {
 
 .wave {
     height: 831px;
-    width: 100%;
+    width: 100vw;
+    display: block;
 }
 
 .section1 {
-    justify-content: center;
-    align-items: center;
     display: flex;
+    justify-content: center;
+}
+
+.section1Container{
+    position:relative;
+    display: inline-block;
+}
+
+.section1Align{
+    display: flex;
+    flex-direction: column;
 }
 
 .section1Header {
-    position: absolute;
-    top: 200px;
-    left: 15%;
     font-size: 24px;
-    color: #000000;
+    color: #ffffff;
+    z-index: 10;
+    position: absolute;
+    top: 189px;
+    left: 15%;
 }
+
 .arrow {
     display: flex;
+    gap: 20px;
 }
 
 .join {
@@ -589,10 +602,16 @@ a:hover .searchField {
 .morningRoutine {
     margin-top: 20px;
     color: rgba(0, 0, 0, 1);
-    text-align: center;
     height: 350px;
     font-size: 24px;
     padding-top: 140px;
+    display: flex;
+    justify-content: center;
+}
+
+.morningRoutineAlign{
+    display: flex;
+    flex-direction: column;
 }
 
 .morning {
@@ -604,7 +623,7 @@ a:hover .searchField {
 }
 
 .morningPic {
-    max-width: 514px;
+    width: 514px;
     max-height: 280px;
     border-top-left-radius: 40px;
     border-bottom-left-radius: 40px;
@@ -616,8 +635,6 @@ a:hover .searchField {
     background-color: #e0dbd9;
     border-top-right-radius: 40px;
     border-bottom-right-radius: 40px;
-   
-    
 }
 
 .p1 {
@@ -626,11 +643,16 @@ a:hover .searchField {
 
 .afternoonRoutine {
     color: rgba(0, 0, 0, 1);
-    text-align: left;
-    align-items: center;
     height: 350px;
     font-size: 24px;
     padding-top: 30px;
+    display: flex;
+    justify-content: center;
+}
+
+.afternoonRoutineAlign{
+    display: flex;
+    flex-direction: column;
 }
 
 .afternoon {
@@ -639,18 +661,13 @@ a:hover .searchField {
     display: flex;
     text-align: left;
     justify-content: center;
-
-
 }
 
 .afternoonPic {
-    max-width: 514px;
+    width: 514px;
     max-height: 280px;
     border-top-left-radius: 40px;
     border-bottom-left-radius: 40px;
-
-
-
 }
 
 .afternoonBox {
@@ -669,11 +686,16 @@ a:hover .searchField {
 
 .nightRoutine {
     color: rgba(0, 0, 0, 1);
-    text-align: center;
-    align-items: center;
     height: 350px;
     font-size: 24px;
     padding-top: 30px;
+    display: flex;
+    justify-content: center;
+}
+
+.nightRoutineAlign{
+    display: flex;
+    flex-direction: column;
 }
 
 .linkNight{
@@ -719,7 +741,7 @@ a:hover .searchField {
 }
 
 .nightPic {
-    max-width: 514px;
+    width: 514px;
     max-height: 280px;
     border-top-left-radius: 40px;
     border-bottom-left-radius: 40px;
@@ -744,8 +766,14 @@ a:hover .searchField {
 }
 
 .section3 {
-   align-items: center;
+   display: flex;
+   justify-content: center;
    width: 100%;
+}
+
+.section3Align{
+    display: flex;
+    flex-direction: column;
 }
 
 .videorow{
@@ -768,7 +796,6 @@ a:hover .searchField {
   font-weight: Regular;
   font-size: 34px;
   opacity: 1;
-  text-align: center;
   padding-top: 90px;
   padding-bottom: 30px;
 }
@@ -814,9 +841,6 @@ a:hover .searchField {
 .afterVid {
     height: 33%;
     width: 100%;
-    justify-content: center;
-    align-items: center;
-    display: flex;
     padding-bottom: 30px;
     padding-top: 120px;
 }
@@ -826,18 +850,14 @@ a:hover .searchField {
     font-size: x-large;
 }
 
-.topImages {
-    display: flex;
-    flex-direction: row;
-    gap: 30px;
-    justify-content: center;
-    margin-left: 30px;
-}
-
 .section4{
     display: flex;
+    justify-content: center;
+}
+
+.section4Align{
+    display: flex;
     flex-direction: column;
-    
 }
 
 .container1{
@@ -876,8 +896,6 @@ a:hover .searchField {
     display:block;
     width: 620px;
     height: 446px;
-    
-
 }
 
 
@@ -907,9 +925,8 @@ a:hover .searchField {
 .bottom-pics{
     display: flex;
     flex-direction: row;
-    gap: 30px;
+    gap: 57px;
     justify-content: center;
-    margin-right: 25px;
     padding-bottom: 120px;
 }
 
