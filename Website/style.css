@@ -1071,7 +1071,6 @@ a:hover .searchField {
 /*Sleep Page*/
 
 .sleepBody, .sleepHTML{
-    background-color: #C0D6DF;
     height: 100%;
     margin: 0px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -1080,11 +1079,12 @@ a:hover .searchField {
 .sleepNav{
     height:100px;
     font-family:Verdana, Geneva, Tahoma, sans-serif;
-    background-color:#C0D6DF;
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
+    justify-content: center;
     align-items: center;
+    background-color: #D2ECFF;
+    gap: 75px;
 }
 
 .sleepNavSleep{
@@ -1145,14 +1145,14 @@ a:hover .searchField {
 }
 
 .sleepSearchIcon {
-    width: 30px;
-    height: 30px;
+    width: 60px;
+    height: 60px;
     object-fit: cover;
 }
 
 .sleepProfilePic{
-    width: 50px;
-    height: 50px;
+    width: 80px;
+    height: 80px;
     object-fit: cover;
     border-radius: 60px;
 }
@@ -1163,49 +1163,55 @@ a:hover .searchField {
     font-weight: 700;
 }
 
-
-
 .sleepTopColumn {
-    background-color: #28444D;
-    height: 670px;
+    background-color: #EFEFEF;
+    height: 549px;
     font-family:Verdana, Geneva, Tahoma, sans-serif;
-    color:#ffffff;
-    padding-top: 3%;
+    color:#000000;
 }
 
 .sleepBottomColumn {
-    background-color: #04313E;
-    height: 2100px;
+    background-color: #ffffff;
+    display: flex;
+    justify-content: center;
+    height: 2800px;
     font-family:Verdana, Geneva, Tahoma, sans-serif;
-    color:#ffffff;
+    color:#000000;
     font-size:small;
 }
 
 .sleepHeaderText {
+    padding-top:30px;
     margin:0;
-    padding-left:15%;
+    padding-left:9%;
     font-weight:lighter;
+    font-size:24px;
 }
 
 .sleepHeaderTitle {
-    padding-left:15%;
+    padding-left:9%;
+    margin-top:0;
+    margin-bottom:0;
+    font-size:70px;
     font-weight:lighter;
 }
 
 .sleepHeaderPic{
-    width:450px;
-    height:450px;
-    object-fit:cover;
-    position:absolute;
-    left:35%;
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    justify-content: center;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .sleepHeaderPicDesc {
     align-items: center;
-    display:flex;
-    justify-content:space-evenly;
-    padding-top:30%;
-    font-size:23px;
+    display: flex;
+    justify-content: center;
+    font-weight: bold;
+    font-size: 34px;
 }
 
 .sleepPicks{
@@ -1214,10 +1220,9 @@ a:hover .searchField {
 }
 
 .sleepPicksHeader {
-    color:#ffffff;
-    font-weight:lighter;
-    width:2800px;
-    padding-left:17%;
+    font-size:34px;
+    color:#000000;
+    padding-left: 4%;
 }
 
 .sleepPicksDesc{
@@ -1233,45 +1238,67 @@ a:hover .searchField {
 
 .sleepPicksImage1 img{
     object-fit:cover;
-    width:300px;
-    height:200px;
+    width:400px;
+    height:250px;
     border-radius:15px;
+}
+
+.sleepPicksImage1 img:hover{
+    cursor: pointer;
+    box-shadow: 10px 10px 30px black;
+    transition: 300ms;
 }
 
 .sleepPicksImage1 {
     text-align: justify;
-    width: 300px;
+    width: 400px;
     padding-right:40px;
+    font-size:22px;
 }
 
 .sleepPicksImage2 img{
     object-fit:cover;
-    width:300px;
-    height:200px;
+    width:400px;
+    height:250px;
     border-radius:15px;
+}
+
+.sleepPicksImage2 img:hover{
+    cursor: pointer;
+    box-shadow: 10px 10px 30px black;
+    transition: 300ms;
 }
 
 .sleepPicksImage2 {
     text-align: justify;
-    width: 300px;
+    width: 400px;
     padding-right:40px;
+    font-size:22px;
 }
 
 .sleepPicksImage3 img{
     object-fit:cover;
-    width:300px;
-    height:200px;
+    width:400px;
+    height:250px;
     border-radius:15px;
+}
+
+.sleepPicksImage3 img:hover{
+    cursor: pointer;
+    box-shadow: 10px 10px 30px black;
+    transition: 300ms;
 }
 
 .sleepPicksImage3 {
     text-align: justify;
-    width: 300px;
+    width: 400px;
+    padding-right:40px;
+    font-size:22px;
 }
 
 .sleepPopular {
-    font-weight:lighter;
-    padding-left:17%;
+    font-size:34px;
+    padding-left:4%;
     padding-top:2%;
 }
 
@@ -1282,83 +1309,137 @@ a:hover .searchField {
 
 .sleepPopularImage1 img{
     object-fit:cover;
-    width:300px;
-    height:200px;
+    width:400px;
+    height:250px;
     border-radius:15px;
+}
+
+.sleepPopularImage1 img:hover{
+    cursor: pointer;
+    box-shadow: 10px 10px 30px black;
+    transition: 300ms;
 }
 
 .sleepPopularImage1 {
     text-align: justify;
-    width: 300px;
+    width: 400px;
     padding-right:40px;
+    font-size:22px;
 }
 
 .sleepPopularImage2 img{
     object-fit:cover;
-    width:300px;
-    height:200px;
+    width:400px;
+    height:250px;
     border-radius:15px;
+}
+
+.sleepPopularImage2 img:hover{
+    cursor: pointer;
+    box-shadow: 10px 10px 30px black;
+    transition: 300ms;
 }
 
 .sleepPopularImage2 {
     text-align: justify;
-    width: 300px;
+    width: 400px;
     padding-right:40px;
+    font-size:22px;
 }
 
 .sleepPopularImage3 img{
     object-fit:cover;
-    width:300px;
-    height:200px;
+    width:400px;
+    height:250px;
     border-radius:15px;
+}
+
+.sleepPopularImage3 img:hover{
+    cursor: pointer;
+    box-shadow: 10px 10px 30px black;
+    transition: 300ms;
 }
 
 .sleepPopularImage3 {
     text-align: justify;
-    width: 300px;
+    width: 400px;
+    padding-right:40px;
+    font-size:22px;
 }
 
 .sleepNew {
-    font-weight:lighter;
+    font-size:34px;
     padding-top:5%;
-    padding-left:17%;
+    padding-left:4%;
+}
+
+.sleepNewImageText1 {
+    font-size:34px;
+    font-weight:lighter;    
+    position: absolute;
+    z-index:10;
+    left: 6%;
+    color:#ffffff;
+}
+
+.sleepNewImageText2 {
+    font-size:34px;
+    font-weight:lighter;
+    position: absolute;
+    left: 54%;
+    color:#ffffff;
 }
 
 .sleepNewImagesAll {
     display:flex; 
     justify-content:center;
+    position:relative;
 }
 
 .sleepNewImage1 img{
     object-fit:cover;
-    width:470px;
-    height:275px;
+    width:620px;
+    height:350px;
     border-radius:15px;
+}
+
+.sleepNewImage1 img:hover{
+    cursor: pointer;
+    box-shadow: 10px 10px 30px black;
+    transition: 300ms;
 }
 
 .sleepNewImage1 {
     text-align: justify;
-    width: 470px;
+    width: 620px;
     padding-right:35px;
+    font-size:22px;
 }
 
 .sleepNewImage2 img{
     object-fit:cover;
-    width:470px;
-    height:275px;
+    width:620px;
+    height:350px;
     border-radius:15px;
+}
+
+.sleepNewImage2 img:hover{
+    cursor: pointer;
+    box-shadow: 10px 10px 30px black;
+    transition: 300ms;
 }
 
 .sleepNewImage2 {
     text-align: justify;
-    width: 470px;
+    width: 620px;
+    font-size:22px;
 }
 
 .sleepRecents {
-    font-weight:lighter;
     justify-content: space-around;
     padding-top:5%;
-    padding-left:17%;
+    padding-left:4%;
+    font-size:34px;
 }
 
 .sleepRecentImagesTop {
@@ -1374,23 +1455,31 @@ a:hover .searchField {
 
 .sleepRecentImage1 {
     text-align:justify;
-    width:300px;
+    width:400px;
     margin:25px;
+    font-size:22px;
 }
 
 .sleepRecentImage1 img {
     object-fit:cover;
     flex-grow: 1;
     margin: 5px;
-    width:300px;
-    height:200px;
+    width:400px;
+    height:250px;
     border-radius:15px;
+}
+
+.sleepRecentImage1 img:hover{
+    cursor: pointer;
+    box-shadow: 10px 10px 30px black;
+    transition: 300ms;
 }
 
 .sleepRecentImage2 {
     text-align:justify;
-    width:300px;
+    width:400px;
     margin:25px;
+    font-size:22px;
 }
 
 .sleepRecentImage2 img {
@@ -1402,74 +1491,109 @@ a:hover .searchField {
     border-radius:15px;
 }
 
+.sleepRecentImage2 img:hover{
+    cursor: pointer;
+    box-shadow: 10px 10px 30px black;
+    transition: 300ms;
+}
+
 .sleepRecentImage3{
     text-align:justify;
-    width:300px;
+    width:400px;
     margin:25px;
+    font-size:22px;
 }
 
 .sleepRecentImage3 img {
     object-fit:cover;
     flex-grow: 1;
     margin: 5px;
-    width:300px;
-    height:200px;
+    width:400px;
+    height:250px;
     border-radius:15px;
+}
+
+.sleepRecentImage3 img:hover{
+    cursor: pointer;
+    box-shadow: 10px 10px 30px black;
+    transition: 300ms;
 }
 
 .sleepRecentImage4{
     text-align:justify;
-    width:300px;
+    width:400px;
     margin:25px;
+    font-size:22px;
 }
 
 .sleepRecentImage4 img {
     object-fit:cover;
     flex-grow: 1;
     margin: 5px;
-    width:300px;
-    height:200px;
+    width:400px;
+    height:250px;
     border-radius:15px;
+}
+
+.sleepRecentImage4 img:hover{
+    cursor: pointer;
+    box-shadow: 10px 10px 30px black;
+    transition: 300ms;
 }
 
 .sleepRecentImage5{
     text-align:justify;
-    width:300px;
+    width:400px;
     margin:25px;
+    font-size:22px;
 }
 
 .sleepRecentImage5 img {
     object-fit:cover;
     flex-grow: 1;
     margin: 5px;
-    width:300px;
-    height:200px;
+    width:400px;
+    height:250px;
     border-radius:15px;
+}
+
+.sleepRecentImage5 img:hover{
+    cursor: pointer;
+    box-shadow: 10px 10px 30px black;
+    transition: 300ms;
 }
 
 .sleepRecentImage6 {
     text-align:justify;
-    width:300px;
+    width:400px;
     margin:25px;
+    font-size:22px;
 }
 
 .sleepRecentImage6 img {
     object-fit:cover;
     flex-grow: 1;
     margin: 5px;
-    width:300px;
-    height:200px;
+    width:400px;
+    height:250px;
     border-radius:15px;
 }
 
+.sleepRecentImage6 img:hover{
+    cursor: pointer;
+    box-shadow: 10px 10px 30px black;
+    transition: 300ms;
+}
 
-/**SLEEP FOOTER**/
+
+/*SLEEP FOOTER*/
 .sleepFooter{
-    background-color: #C0D6DF;
-    height: 369px;
+    background-color: #D2ECFF;
+    height: 250px;
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
+    justify-content: center;
+    gap: 540px;
 }
 
 .sleepFooter1 {
@@ -1481,10 +1605,11 @@ a:hover .searchField {
 .sleepFooterListItem {
     font-size: 18px;
     color: #000000;
+    text-decoration:none;
 }
 
 .sleepFooterSectionTitle {
-    font-size: 24pt;
+    font-size: 24px;
     padding-bottom: 5px;
     font-weight: 600;
     color: #000000;
@@ -1496,6 +1621,7 @@ a:hover .searchField {
     color: #000000;
     font-size: 38px;
 }
+
 
 .sleepFooter1Description {
     margin: 0;
@@ -1519,6 +1645,8 @@ a:hover .searchField {
     gap: 10px;
     color: #000000;
 }
+
+/*END SLEEP FOOTER*/
 
 /*Mood Page*/
 .moodBody , .moodHTML {
