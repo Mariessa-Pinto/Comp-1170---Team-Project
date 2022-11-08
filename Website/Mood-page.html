@@ -27,116 +27,101 @@
 
     <div class="moodSection1">
         <h3>Your Personalized Mood Assistance</h3>
-        <h1 class="moodAnimationSlogan" >Repeat After Me. <img src="Speaker Icon.svg" alt="speakerIcon" class="moodSpeakerImg"></h1>
-        <div class="moodAnimation">
-            <h1 class="moodAnimationSlogan"></h1>
-            <div class="timerBar">
+        <h1 class="moodAnimationInstruct" >Repeat After Me.</h1>
+            <div class="moodAnimation">
+                <h1 class="moodAnimationSlogan"></h1>
+                <!--<div class="timerBar"></div>-->
             </div>
-        </div>
     </div>
     <div class="moodExercises">
-            <h3>Activities</h3>
-            <p>List some activities you enjoy.<a><img src="Question Icon.svg" alt="questionIcon" class="moodQicon"><span class="questionInfo">If you're feeling down, come back to this list 
-                to remind you of some fun things to do!</span></a></p>
+            <h3>Activities <a><img src="Question Icon.svg" alt="questionIcon" class="moodQicon"><span class="questionInfo">List some activities you enjoy. If you're feeling down, come back to this list 
+                to remind you of some fun things to do!</span></a></h3>
             <div class="activityText">    
-                <div class="activityTextCol1">
                     <input type="text" id="activity1" placeholder="Activity #1">
                     <input type="text" id="activity2" placeholder="Activity #2">
                     <input type="text" id="activity3" placeholder="Activity #3">
-                </div>    
-                <div class="activityTextCol2">
                     <input type="text" id="activity4" placeholder="Activity #4">
-                    <input type="text" id="activity5" placeholder="Activity #5">
-                    <button type="submit" class="moodButtons moodSaveExc">Save my activities</button>
+                    <button type="submit" class="moodButtons moodSaveExc">Save<br>my activities</button>
                 </form>                
-                </div>
             </div>
 
-            <h3>Mindfulness</h3>
-            <p>List some things you are experiencing right now in each category.<a><img src="Question Icon.svg" alt="questionIcon" class="moodQicon">
-                <span class="questionInfo">Focus on your five senses: Sight, Touch, Hearing, Smell, and Taste.</span></a></p>
-            <div class="activityText">    
-                <div class="activityTextCol1">
+            <h3 class="h3Spacing">Mindfulness <a><img src="Question Icon.svg" alt="questionIcon" class="moodQicon">
+                <span class="questionInfo">List some things you are experiencing right now in each category. Focus on your five senses: Sight, Touch, Hearing, Smell, and Taste.</span></a></h3>
+            <div class="activityTextMind">    
                     <input type="text" id="moodSight" placeholder="Things I can see...">
                     <input type="text" id="moodTouch" placeholder="Things I can touch...">
                     <input type="text" id="moodHearing" placeholder="Things I can hear...">
-                </div>    
-                <div class="activityTextCol2">
                     <input type="text" id="moodSmell" placeholder="Things I can smell...">
                     <input type="text" id="moodTaste" placeholder="Things I can taste...">
-                    <button type="submit" class="moodButtons moodSaveJou">Save to my Journal</button>
-                </div>
+                    <button type="submit" class="moodButtons moodSaveJou">Save<br>to my Journal</button>
             </div>
 
-            <h3>Goal Setting</h3>
-            <p>Select some goals or choose your own.<a><img src="Question Icon.svg" alt="questionIcon" class="moodQicon">
-                <span class="questionInfo">Whether small or big, pick something that you can manage today.</span></a></p>
-            <div class="activityText">    
-                <div class="activityTextCol1">
-                    <label class="moodGoals">Make the bed <img src="MoodGoalBed.jpg" class="goalImgs moodImgBed" alt="bedPic">
+            <h3 class="h3Spacing">Goal Setting <a><img src="Question Icon.svg" alt="questionIcon" class="moodQicon">
+                <span class="questionInfo">Select some goals or choose your own. Whether small or big, pick something that you can manage today.</span></a></h3>
+            <div class="activityTextGoal">    
+                    <label class="moodGoals moodGoalBed">
                         <input type="checkbox" id="goal1Bed">
-                        <span class="checkbubble"></span>
+                        <span class="checkbubble">Make the bed</span>
                     </label>
-                    <label class="moodGoals">Eat a snack <img src="MoodGoalApple.jpg" class="goalImgs moodImgApple" alt="applePic">
-                        <input type="checkbox" id="goal2Apple">
-                        <span class="checkbubble"></span>
-                    </label>
-                    <label class="moodGoals">Go for a walk <img src="MoodGoalForest.jpg" class="goalImgs moodImgForest" alt="forestPic">
-                        <input type="checkbox" id="goal3Forest">
-                        <span class="checkbubble"></span>
-                    </label>
-                    <label class="moodGoals">Talk with a friend <img src="MoodGoalTalk.jpg" class="goalImgs moodImgTalk" alt="friendPic">
-                        <input type="checkbox" id="goal4Talk">
-                        <span class="checkbubble"></span>
-                    </label>
-                </div>    
-                <div class="activityTextCol2">
-                    <label class="moodGoals">Buy some groceries <img src="MoodGoalGrocery.jpg" class="goalImgs moodImgGroc" alt="GroceryPic">
+                    <label class="moodGoals moodGoalGroc">
                         <input type="checkbox" id="goal5Groc">
-                        <span class="checkbubble"></span>
+                        <span class="checkbubble">Buy some groceries</span>
                     </label>
-                    <label class="moodGoals">Do the laundry <img src="MoodGoalLaund.jpg" class="goalImgs moodImgLaund" alt="laundryPic">
-                        <input type="checkbox" id="goal5Laund">
-                        <span class="checkbubble"></span>
+                   <label class="moodGoals moodGoalEat">
+                        <input type="checkbox" id="goal2Apple">
+                        <span class="checkbubble">Eat a snack</span>
                     </label>
-                        <input type="text" class="activityText moodFriend" placeholder="Type in your own goal">
-                    <button type="button" class="moodButtons moodSaveGoal">Save my Goals</button>
-                </div>
+                    <label class="moodGoals moodGoalLaund">
+                        <input type="checkbox" id="goal6Laund">
+                        <span class="checkbubble">Do the laundry</span>
+                    </label>
+                     <label class="moodGoals moodGoalWalk">
+                        <input type="checkbox" id="goal3Forest">
+                        <span class="checkbubble">Go for a walk</span>
+                    </label>
+                    <label class="moodGoals moodGoalTalk">
+                        <input type="checkbox" id="goal4Talk">
+                        <span class="checkbubble">Talk with a friend</span>
+                    </label>
+                    <label class="moodGoals moodGoalOwn">
+                        <input type="checkbox" id="goal7Own">
+                        <span class="checkbubble">Choose your own goal</span>
+                    </label>
+                    <button type="submit" class="moodButtons moodSaveGoal">Save<br>my Goals</button>
             </div>
 
-            <h3>Gratefulness Journal</h3>
-            <p>Write something that you are grateful for today.<a><img src="Question Icon.svg" alt="questionIcon" class="moodQicon">
-                <span class="questionInfo">We'll remind you to try to write at least one new thing each day.</span></a></p>
-                <textarea name="Gratefulness Jouurnal" id="moodJournal" cols="95" rows="3" placeholder="What are you grateful for today?"></textarea>
-                <button type="submit" class="moodButtons moodSaveGfn">Save to my Journal</button>
+            <h3 class="h3Spacing">Gratefulness Journal <a><img src="Question Icon.svg" alt="questionIcon" class="moodQicon"><span class="questionInfo">Write something that you are grateful for today. We'll remind you to try to write at least one new thing each day.</span></a></h3>
+            <div class="activityTextGrateful">    
+                <textarea name="Gratefulness Journal" id="moodJournal" cols="50" rows="3" placeholder="What are you grateful for today?"></textarea>
+                <button type="submit" class="moodButtons moodSaveGfn">Save<br>to my Journal</button>
             </div>
     </div>
 
     <div class="moodFooter">
         <div class="moodFooter1">
-            <h3 class="moodFooter1Header">ZEN</h3>
-            <p class="moodFooter1Description">Find your Zen</p>
+            <a href="index.html"><h3 class="moodFooter1Header">ZEN</h3>
+            <p class="moodFooter1Description">Find your Zen</p></a>
         </div>
         <div class="moodFooter2">
             <ul class="moodFooter2List">
-                <li class="moodFooterSectionTitle">About Us</li>
-                <li class="moodFooterListItem">Who We Are</li>
-                <li class="moodFooterListItem">Our Mission</li>
-                <li class="moodFooterListItem">Careers With Us</li>
+                <a href="index.html"><li class="moodFooterSectionTitle">About Us</li></a>
+                <a href="index.html"><li class="moodFooterListItem">Who We Are</li></a>
+                <a href="index.html"><li class="moodFooterListItem">Our Mission</li></a>
+                <a href="index.html"><li class="moodFooterListItem">Careers With Us</li></a>
             </ul>
 
             <ul class="moodFooter2List">
-                <li class="moodFooterSectionTitle">Contact Us</li>
-                <li class="moodFooterListItem">zen@gmail.com</li>
-                <li class="moodFooterListItem">Instagram</li>
-                <li class="moodFooterListItem">Facebook</li>
+                <a href="index.html"><li class="moodFooterSectionTitle">Contact Us</li></a>
+                <a href="index.html"><li class="moodFooterListItem">zen@gmail.com</li></a>
+                <a href="index.html"><li class="moodFooterListItem">Instagram</li></a>
+                <a href="index.html"><li class="moodFooterListItem">Facebook</li></a>
             </ul>
 
             <ul class="moodFooter2List">
-                <li class="moodFooterSectionTitle">More</li>
-                <li class="moodFooterListItem">Blog</li>
-                <li class="moodFooterListItem">Help Center</li>
-                <li class="moodFooterListItem">Support</li>
+                <a href="index.html"><li class="moodFooterSectionTitle">More</li></a>
+                <a href="index.html"><li class="moodFooterListItem">Blog</li></a>
+                <a href="index.html"><li class="moodFooterListItem">Help Center</li></a>
+                <a href="index.html"><li class="moodFooterListItem">Support</li></a>
             </ul>
         </div>
     </div>
