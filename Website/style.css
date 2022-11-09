@@ -2575,14 +2575,14 @@ a:hover .questionInfo {
 
 /*Resource Page*/
 
-/*Resources Nav Bar starts*/
-.resBody , reshtml {
+
+.resBody , .reshtml {
     height: 100%;
     margin: 0px;
-    background-color: #D6EDFF;
+    background-color: #ffffff;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
-
+/*Resources Nav Bar starts*/
 .resA{
     text-decoration: none;
 }
@@ -2591,10 +2591,18 @@ a:hover .questionInfo {
     height: 100px;
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
+    justify-content: center;
     align-items: center;
+    background-color: #D2ECFF;
+    gap: 75px;
 }
-
+.navicons{
+    padding-left: 250px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 75px;
+}
 .profilePic{
     width: 80px;
     height: 80px;
@@ -2612,15 +2620,28 @@ a:hover .questionInfo {
     font-size: 21px;
     color: #000000;
 }
-
+.resNavSleep:hover{
+    border-bottom: 2px solid #000000;
+    font-weight: bold;
+}
 .resNavMood{
     font-size: 21px;
     color: #000000;
 }
 
+.resNavMood:hover{
+    border-bottom: 2px solid #000000;
+    font-weight: bold;
+}
+
 .resNavMeditation{
     font-size: 21px;
     color: #000000;
+}
+
+.resNavMeditation:hover{
+    border-bottom: 2px solid #000000;
+    font-weight: bold;
 }
 
 .resNavResource{
@@ -2630,36 +2651,141 @@ a:hover .questionInfo {
     color: #000000;
 }
 
+.resNavResource:hover{
+    border-bottom: 2px solid #000000;
+    font-weight: bold;
+}
+
 .searchIcon{
     width: 60px;
     height: 60px;
     object-fit: cover;
 }
+
+.searchIcon:hover{
+    border-bottom: 2px solid #000000;
+}
 /*Resources Nav Bar ends*/
 
 .ResSection1{
-    background-color: #40798C;
-    height: 920px;
+    background-color: #EFEFEF;
+    height: 592px;
+    padding-top: 0px;
 }
 
-.resHeading{
+.resStairsAlign{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 100px;
+}
+.resStairsPic{
+    width:517px;
+    height:225px;
+    object-fit:cover;
+}   
+.resbooksalign{
+    display: flex;
+    justify-content: center;
+    margin-top: 191px;
+}
+
+.resbooksalign2{
+    display: flex;
+    flex-direction: column;
+}
+
+.resHeadingBooks{
     font-size: 30px;
+    color: #191919;
+    width: 1280px;
+}
+
+.resteamalign{
+    display: flex;
+    justify-content: center;
+    margin-top: 191px;
+}
+
+.resteamalign2{
+    display: flex;
+    flex-direction: column;
+    width: 1280px;
+}
+
+.resHeadingTeam{
+    font-size: 30px;
+    color: #191919;
+}
+
+.resreviewalign{
+    display: flex;
+    justify-content: center;
+    margin-top: 191px;
+}
+
+.resreviewalign2{
+    display: flex;
+    flex-direction: column;
+    width: 1280px;
+}
+
+.resHeadingReviews{
+    font-size: 30px;
+    color: #191919;
+}
+
+.resFAQalign{
+    display: flex;
+    justify-content: center;
+    margin-top: 191px;
+}
+
+.resFAQalign2{
+    display: flex;
+    flex-direction: column;
+    width: 1280px;
+}
+
+.resHeadingFAQ{
+    font-size: 30px;
+    color: #191919;
+}
+
+.resExtraalign{
+    display: flex;
+    justify-content: center;
+    margin-top: 191px;
+}
+
+.resExtraalign2{
+    display: flex;
+    flex-direction: column;
+    width: 1280px;
+}
+
+.resHeadingExtra{
+    font-size: 30px;
+    color: #191919;
 }
 
 .ResSection1Header{
-    padding-top: 100px;
+    padding-top: 131px;
+    margin: 0;
     font-size: 70px;
-    color: white;
+    color: #191919;
     text-align: center;
+    font-weight: lighter;
     
 }
 .ResSection1Top{
     display: flex;
     flex-direction: row;
-    align-items: flex-start;
+    align-items: center;
     gap: 60px;
     justify-content: center;
-    padding-top: 20px;
+    padding-top: 262px;
+
 }
 .rounded{
     border-radius: 22px;
@@ -2668,9 +2794,10 @@ a:hover .questionInfo {
     display: flex;
     flex-direction: column;
     align-items: center;
+    
 }
 .btn-one{
-    background-color: #F9F4F2; 
+    background-color: #EFEFEF; 
     border: none; 
     color: black;
     margin-top: 40px;
@@ -2685,9 +2812,10 @@ a:hover .questionInfo {
     display: flex;
     flex-direction: column;
     align-items: center;
+    
 }
 .btn-two{
-    background-color: #F9F4F2; 
+    background-color: #EFEFEF; 
     border: none; 
     color: black;
     margin-top: 40px;
@@ -2704,7 +2832,7 @@ a:hover .questionInfo {
     align-items: center;
 }
 .btn-three{
-    background-color: #F9F4F2; 
+    background-color: #EFEFEF; 
     border: none; 
     color: black;
     margin-top: 40px;
@@ -2716,40 +2844,45 @@ a:hover .questionInfo {
     cursor: pointer;
 }
 
-.ResSection2{
-    background-color: #D6EDFF;
+.resbooksrow{
+    display: flex;
+    flex-direction: column;
+}
+.resrow-one{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
     justify-content: center;
-    height: 93%;
-    margin: 0;
-    padding: 5px 11% 0px 4%;
 }
 
 .row-one{
     display: flex;
-    justify-content: space-between;
     padding-top: 8px;
     cursor: pointer;
     object-fit: cover;
+}
+
+.resrow-two{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
 }
 .row-two{
     display: flex;
-    justify-content: space-between;
     padding-top: 8px;
     cursor: pointer;
     object-fit: cover;
 }
-.ResSection2Part1{
-    margin-left: 9%;
-}
-.ResSection2Part2{
-    height: 88%;
-    margin: 0;
-    padding: 5px 11.5% 0px 11.5%;
-}
+
+
 
 .ResBox1{  
     display: flex;
-    justify-content: space-between;
+    align-items: center;
+    justify-content: center;
+    gap: 60px;
+
 }
 
 .ResRightBox{
@@ -2795,9 +2928,12 @@ a:hover .questionInfo {
     padding-top: 15px;
     padding-left: 35px;
 }
-.ResSection2Part3{
-    padding: 5px 11% 0px 4%;
-    margin: 0 0 0 7.5%;
+
+
+.ResRevBox{
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .ResBoxBottom{
@@ -2811,24 +2947,21 @@ a:hover .questionInfo {
     object-fit: cover;
 }
 select{
-    padding-left: 20%;
-    width: 87.5%;
-    height: 50px;
-    padding: 0;
-    display: flex;
-    justify-content: center;
+    width: 1156px;
+    height: 73px;
+    align-items: center;
     border: solid 2px black;
     font-size: 18px;
     background-color: #F9F4F2;
-    justify-content: center;
 }
 
 .ResourcesProBox{
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
     background-color: #F9F4F2;
-    width: 100%;
+    width: 1280px;
     border-radius: 40px;
     height: 280px;
 }
@@ -2869,9 +3002,6 @@ select{
     gap: 5px;
 }
 
-.ResSection2Part4{
-    padding: 5px 0% 0px 11.5%;
-}
 
 .ResourcesS1HeaderText{
     font-size: 24px;
@@ -2879,9 +3009,7 @@ select{
     margin: 0;
 }
 
-.ResSection2Part5{
-    padding: 5px 11.5% 0px 11.5%;
-}
+
 
 .ResourcesS1-1RightTop{
     padding-top: 15px;
@@ -2890,6 +3018,8 @@ select{
 
 .ResourcesProBottom{
     padding-top: 10px;
+    display: flex;
+    align-items: center;
     justify-content: center;
 }
 
@@ -2908,13 +3038,33 @@ select{
 .ResProText{
     display: flex;
     flex-direction: column;
+    justify-content: space-evenly;
+    padding-right: 200px;
 }
+
+.ResProText2{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding-right: 20px;
+}
+
+.ResProText:hover{
+    cursor: pointer;
+}
+
+.ResProText2:hover{
+    cursor: pointer;
+}
+
 .helpbuttons{
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
+    align-items: center;
+    gap: 142px;
 }
 .btn-help{
-    background-color: #28444D; 
+    background-color: #F9F4F2; 
     border: none; 
     color: black;
     margin-top: 20px;
@@ -2926,17 +3076,24 @@ select{
     font-size: 20px;
     text-align: center;
     cursor: pointer;
-    color: white;
+    color: #191919;
 }
 
+.ResQuestions{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
 
 /*Footer*/
 .ResFooter{
-    background-color: #28444D;
-    height: 369px;
+    background-color: #D2ECFF;
+    height: 248px;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
+    margin-top: 191px;
 }
 
 .ResFooter1{
@@ -2947,20 +3104,20 @@ select{
 
 .ResFooterListItem{
     font-size: 18px;
-    color: #F9F4F2;
+    color: #000000;
 }
 
 .ResFooterSectionTitle{
     font-size: 24pt;
     padding-bottom: 5px;
     font-weight: 600;
-    color: #F9F4F2;
+    color: #000000;
 }
 
 .ResFooter1Header {
     margin: 0;
     padding-bottom: 10px;
-    color: #F9F4F2;
+    color: #000000;
     font-size: 38px;
 }
 
@@ -2971,7 +3128,7 @@ select{
 .ResFooter1Description {
     margin: 0;
     font-size: 18px;
-    color: #F9F4F2;
+    color: #000000;
 }
 
 .ResFooter2{
@@ -2988,7 +3145,7 @@ select{
     display: flex;
     flex-direction: column;
     gap: 10px;
-    color: #F9F4F2;
+    color: #000000;
 }
 
 .ResFooter2List:hover{
