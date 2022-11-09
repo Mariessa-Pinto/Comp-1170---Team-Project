@@ -1077,21 +1077,49 @@ a:hover .searchField {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
+a {
+    text-decoration: none;
+    color:#000000;
+}
+
+/*Sleep Nav Bar*/
 .sleepNav{
     height:100px;
     font-family:Verdana, Geneva, Tahoma, sans-serif;
-    background-color:#C0D6DF;
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
+    justify-content: center;
     align-items: center;
+    background-color: #D2ECFF;
+    gap: 75px;
+}
+
+.sleepSearchAndProfile{
+    padding-left: 250px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 75px;
+}
+
+.sleepProfilePic{
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    border-radius: 60px;
+}
+
+.sleepNavBrand{
+    font-size: 28px;
+    color: #000000;
+    font-weight: 700;
 }
 
 .sleepNavSleep{
     font-size: 21px;
+    color: #000000;
     font-weight: 700;
     text-decoration: underline;
-    color: #000000;
 }
 
 .sleepNavSleep:hover{
@@ -1099,46 +1127,42 @@ a:hover .searchField {
     font-weight:bold;
 }
 
-.sleepNavMed{
-    font-size: 21px;
-    color: #000000;
-    text-decoration: none;
-}
-
-.sleepNavMed:hover{
-    border-bottom: 2px solid #000000;
-    font-weight:bold;
-}
-
-.sleepNavMed:active{
-    border-bottom: 2px solid #000000;
-}
-
 .sleepNavMood{
     font-size: 21px;
     color: #000000;
-    text-decoration: none;
 }
+
 
 .sleepNavMood:hover{
     border-bottom: 2px solid #000000;
     font-weight:bold;
 }
 
-.sleepNavMood:active{
+.sleepNavMed{
+    font-size: 21px;
+    color: #000000;
+}
+
+
+.sleepNavMood:hover{
     border-bottom: 2px solid #000000;
+    font-weight:bold;
 }
 
 .sleepNavRes{
     font-size: 21px;
     color: #000000;
-    text-decoration: none; 
 }
 
 .sleepNavRes:hover{
     border-bottom: 2px solid #000000;
     font-weight:bold;
 }
+
+
+.searchIcon{
+    width: 60px;
+    height: 60px;
 
 .sleepNavRes:active{
     border-bottom: 2px solid #000000;
@@ -1154,15 +1178,10 @@ a:hover .searchField {
     width: 50px;
     height: 50px;
     object-fit: cover;
-    border-radius: 60px;
 }
 
-.sleepNavBrand {
-    font-size: 28px;
-    color: #000000;
-    font-weight: 700;
-}
 
+/*Sleep Nav Bar Ends*/
 
 
 .sleepTopColumn {
