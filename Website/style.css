@@ -1544,10 +1544,47 @@ a:hover .searchField {
     height: 100px;
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
+    justify-content: center;
     align-items: center;
     text-decoration: none;
     background: #D2ECFF;
+    gap: 75px;
+}
+
+.moodSearchAndProfile{
+    padding-left: 250px;   
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 75px;
+}
+
+.moodNavBrand{
+    font-size: 28px;
+    color: #000000;
+    font-weight: 700;
+}
+
+.moodNavSleep{
+    font-size: 21px;
+    color: #000000;
+}
+
+.moodNavSleep:hover{
+    border-bottom: 2px solid #000000;
+    font-weight:bold;
+}
+
+.moodNavMood{
+    font-size: 21px;
+    font-weight: 700;
+    text-decoration: underline;
+    color: #000000; 
+}
+
+.moodNavMood:hover{
+    border-bottom: 2px solid #000000;
+    font-weight:bold;
 }
 
 .moodNavMeditation{
@@ -1555,11 +1592,26 @@ a:hover .searchField {
     color: #000000;
 }
 
-.moodNavMood{
+
+.moodNavMeditation:hover{
+    border-bottom: 2px solid #000000;
+    font-weight:bold;
+}
+
+.moodNavResource{
     font-size: 21px;
-    font-weight: 700;
-    text-decoration: underline;
     color: #000000;
+}
+
+.moodNavResource:hover{
+    border-bottom: 2px solid #000000;
+    font-weight:bold;
+}
+
+.searchIcon{
+    width: 60px;
+    height: 60px;
+    object-fit: cover;
 }
 
 span.searchField {
@@ -1582,6 +1634,8 @@ a:hover .searchField {
     text-align: center;
 
 }
+
+
 
 .moodSection1{
     display: flex;
